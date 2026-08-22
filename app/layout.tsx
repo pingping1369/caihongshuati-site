@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Analytics from "@/components/Analytics";
 import "./globals.css";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://caihongshuati.com";
@@ -25,6 +26,18 @@ export const metadata: Metadata = {
     locale: "zh_CN",
     type: "website",
   },
+  // 站长平台所有权验证 meta（域名绑定后由环境变量注入，避免改代码）
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
+    other: {
+      ...(process.env.NEXT_PUBLIC_BAIDU_VERIFICATION
+        ? { "baidu-site-verification": process.env.NEXT_PUBLIC_BAIDU_VERIFICATION }
+        : {}),
+      ...(process.env.NEXT_PUBLIC_BING_VERIFICATION
+        ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION }
+        : {}),
+    },
+  },
 };
 
 const orgJsonLd = {
@@ -38,7 +51,6 @@ const orgJsonLd = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const ga = process.env.NEXT_PUBLIC_GA_ID;
   return (
     <html lang="zh-CN">
       <body>
@@ -72,16 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </span>
           </div>
         </footer>
-        {ga ? (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga}');`,
-              }}
-            />
-          </>
-        ) : null}
+        <Analytics />
       </body>
     </html>
   );
