@@ -10,6 +10,7 @@ export interface Sample {
   ops: string[];
   ans: number;
   whyExcerpt: string;
+  img?: string;
 }
 
 const LETTERS = ["A", "B", "C", "D", "E"];
@@ -50,6 +51,12 @@ export default function QuestionCard({ q }: { q: Sample }) {
         <div className="qwhy">
           <b>{picked === q.ans ? "答对了！" : `正确答案是 ${LETTERS[q.ans]}。`}</b>{" "}
           {q.whyExcerpt}
+          {q.img && (
+            <figure className="qwhy-img">
+              <img src={q.img} alt={`${q.year}年真题「${q.stem}」的白板图解解析`} loading="lazy" />
+              <figcaption>这道题在小程序里的白板图解</figcaption>
+            </figure>
+          )}
           <span className="more">
             完整解析和这道题的图解考点，在小程序里——微信搜一搜「彩虹题伴」
           </span>

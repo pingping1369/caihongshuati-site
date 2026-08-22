@@ -99,9 +99,14 @@ export default function Home() {
               <li>常考点单独标出，考前重点一目了然</li>
             </ul>
           </div>
-          <div className="feat-img">
-            <Phone src="/img/screens/15-wiki.png" alt="彩虹题伴考点页：图文详解与回忆提问" />
-          </div>
+          <figure className="kp-demo">
+            <img
+              src="/img/kp-demo/nutrition-classification.jpg"
+              alt="考点「营养素的分类与功能」的白板图解：六大营养素分类与宏量微量划分"
+              loading="lazy"
+            />
+            <figcaption>考点「营养素的分类与功能」· 小程序内实图</figcaption>
+          </figure>
         </div>
 
         <div className="feat">
