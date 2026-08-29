@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/questions",
+    "/guide/tiku-pingce",
     "/guide/zhuce",
     "/guide/gongying",
     "/guide/duibi",
@@ -15,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return routes.map((r) => ({
     url: `${SITE}${r}`,
-    lastModified: "2026-08-22",
+    lastModified: "2026-08-29",
     changeFrequency: r === "" ? "weekly" : "monthly",
     priority: r === "" ? 1 : r.startsWith("/guide") ? 0.8 : 0.6,
   }));

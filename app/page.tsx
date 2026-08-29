@@ -177,6 +177,10 @@ export default function Home() {
             <b>注册营养师报考指南</b>
             <span>报考条件 · 考试安排 · 报名方式 · 证书注册</span>
           </Link>
+          <Link className="guide-link" href="/guide/tiku-pingce">
+            <b>刷题工具怎么选</b>
+            <span>题库纯度 · 真题年份 · 解析 · 图解 · 收费，四维对比</span>
+          </Link>
           <Link className="guide-link" href="/guide/gongying">
             <b>公共营养师报考指南</b>
             <span>等级划分 · 各级条件 · 费用区间 · 防坑要点</span>
