@@ -63,9 +63,33 @@ export default function Home() {
         <div className="sec-h">
           <h2>它怎么帮你备考</h2>
         </div>
-        <p className="sec-sub">四件事，每件都替你省一类决策。</p>
+        <p className="sec-sub">五件事，每件都替你省一类决策。</p>
 
         <div className="feat">
+          <div className="feat-txt">
+            <span className="kicker">图解解析</span>
+            <h3>
+              大段解析看不懂？<em>一张图，懂了</em>
+            </h3>
+            <p>
+              每道真题的解析，都画成了一张白板图：四个选项为什么对、为什么错，图上一格一格摆开——先看图懂框架，再回文字抠细节。
+            </p>
+            <ul className="feat-points">
+              <li>解析图与文字解析同屏，计算题给完整步骤</li>
+              <li>做错一道？考点就挂在题下面，点开连考点一起吃透</li>
+            </ul>
+          </div>
+          <figure className="kp-demo">
+            <img
+              src="/img/kp-demo/q2017-1-jiexi.jpg"
+              alt="2017年真题「人体能量消耗测定方法」的解析图解：四种测定方法逐项画图对比与错误选项指认"
+              loading="lazy"
+            />
+            <figcaption>2017 年真题的解析图 · 小程序内实图</figcaption>
+          </figure>
+        </div>
+
+        <div className="feat rev">
           <div className="feat-txt">
             <span className="kicker">今日学习</span>
             <h3>
@@ -75,7 +99,7 @@ export default function Home() {
               不用自己规划进度。每天一个学习队列，复习、薄弱点、新题自动配比；做完打卡，食材贴纸落袋——连着学，看得见。
             </p>
             <ul className="feat-points">
-              <li>到期复习优先，错过的账自动顺延，不滚雪球</li>
+              <li>快忘的题，自动回来——复习节奏，按你的遗忘速度排</li>
               <li>教练一句话直说差距，不绕弯</li>
               <li>有精力就加练，没精力明天见</li>
             </ul>
@@ -85,7 +109,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="feat rev">
+        <div className="feat">
           <div className="feat-txt">
             <span className="kicker green">图解考点</span>
             <h3>
@@ -109,7 +133,7 @@ export default function Home() {
           </figure>
         </div>
 
-        <div className="feat">
+        <div className="feat rev">
           <div className="feat-txt">
             <span className="kicker orange">备考计划</span>
             <h3>
@@ -128,7 +152,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="feat rev">
+        <div className="feat">
           <div className="feat-txt">
             <span className="kicker amber">考纲大纲</span>
             <h3>
