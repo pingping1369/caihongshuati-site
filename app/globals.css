@@ -296,3 +296,21 @@ img { max-width: 100%; display: block; }
   .nav-links { gap: 14px; font-size: 14px; }
   .article .card { padding: 26px 22px; }
 }
+
+/* —— 数据文章图表（2026-09-02 考点数据/重考率页） —— */
+.cbar { margin: 18px 0 8px; }
+.cbar-row { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
+.cbar-label { flex: 0 0 152px; text-align: right; font-size: 13.5px; color: var(--sub); }
+.cbar-track { flex: 1; background: var(--line); border-radius: 6px; height: 22px; overflow: hidden; }
+.cbar-fill { height: 100%; border-radius: 6px; background: var(--blue); min-width: 3px; }
+.cbar-val { flex: 0 0 92px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.bignum-row { display: flex; gap: 14px; margin: 20px 0; flex-wrap: wrap; }
+.bignum { flex: 1 1 150px; background: #f4f9ff; border-radius: 12px; padding: 16px 18px; }
+.bignum b { display: block; font-size: 30px; color: var(--blue); font-family: var(--font-num); line-height: 1.2; }
+.bignum span { font-size: 13px; color: var(--muted); }
+.chart-note { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; }
+.segbar { display: flex; height: 26px; border-radius: 8px; overflow: hidden; margin: 14px 0 8px; }
+.segbar > div { display: flex; align-items: center; justify-content: center; font-size: 12px; white-space: nowrap; overflow: hidden; }
+.seglegend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12.5px; color: var(--sub); }
+.seglegend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+@media (max-width: 560px) { .cbar-label { flex-basis: 108px; font-size: 12px; } .cbar-val { flex-basis: 70px; font-size: 12px; } }

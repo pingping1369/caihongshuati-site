@@ -7,6 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/questions",
     "/guide/tiku-pingce",
+    "/guide/kaodian-shuju",
+    "/guide/zhenti-chongkao",
     "/guide/zhuce",
     "/guide/gongying",
     "/guide/duibi",

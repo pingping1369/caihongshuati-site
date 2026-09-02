@@ -197,6 +197,14 @@ export default function Home() {
         </div>
         <p className="sec-sub">整理自官方与公开资料，标注更新时间，以官方最新通知为准。</p>
         <div className="guide-links">
+          <Link className="guide-link" href="/guide/kaodian-shuju">
+            <b>考点分布数据统计（2017-2025）</b>
+            <span>1735 道真题逐题标注 · 模块占比 · 章节热度 · 高频考点榜</span>
+          </Link>
+          <Link className="guide-link" href="/guide/zhenti-chongkao">
+            <b>真题重考率：八成的题考老考点</b>
+            <span>逐年重考率 33%→86.5% · 数据推出来的刷题策略</span>
+          </Link>
           <Link className="guide-link" href="/guide/zhuce">
             <b>注册营养师报考指南</b>
             <span>报考条件 · 考试安排 · 报名方式 · 证书注册</span>
