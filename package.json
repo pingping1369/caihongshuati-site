@@ -17,5 +17,10 @@
     "@types/node": "^24.0.0",
     "@types/react": "^19.1.0",
     "typescript": "^5.8.0"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "sharp"
+    ]
   }
 }
