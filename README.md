@@ -20,9 +20,10 @@ Next.js 15 App Router，全站 SSG（13 路由全部静态预渲染，首载 JS 
 ## 目录
 
 ```
-app/            页面（首页/样题/4篇指南/FAQ/关于 + sitemap.ts + robots.ts）
-components/     QuestionCard（可交互样题卡）、WxCta（转化区）
+app/            页面（首页/样题/指南/FAQ/关于/moni/2026 模拟卷 + sitemap.ts + robots.ts）
+components/     QuestionCard（可交互样题卡）、MockExam（模拟卷答题器，一题一屏、答一题看一题、做完出分）、WxCta（转化区）
 data/           site-data.json —— 题库规模与样题，由主仓库脚本导出
+                mock-2026.json —— 2026 模拟卷 100 题（自命题，不在小程序题库内；考点按九年真题考频选出）
 public/img/     吉祥物、食材贴纸、产品截图（均来自主仓库 images/ 与 automation/screenshots/）
 public/llms.txt AI 检索用的站点说明
 ```

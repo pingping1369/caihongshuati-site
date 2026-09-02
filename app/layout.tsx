@@ -65,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               彩虹题伴
             </Link>
             <nav className="nav-links">
+              <Link href="/moni/2026">2026 模拟卷</Link>
               <Link href="/questions">样题体验</Link>
               <Link href="/guide/zhuce">报考指南</Link>
               <Link href="/faq">常见问题</Link>

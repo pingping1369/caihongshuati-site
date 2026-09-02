@@ -187,6 +187,8 @@ export default function Home() {
         </div>
         <p style={{ marginTop: 20 }}>
           <Link href="/questions">再来 6 道，覆盖四大模块 ›</Link>
+          <span style={{ margin: "0 12px", color: "var(--faint)" }}>|</span>
+          <Link href="/moni/2026">整套来一遍：2026 模拟卷 100 题，逐题解析 ›</Link>
         </p>
       </section>
 
