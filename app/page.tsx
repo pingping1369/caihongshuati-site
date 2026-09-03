@@ -199,6 +199,10 @@ export default function Home() {
         </div>
         <p className="sec-sub">整理自官方与公开资料，标注更新时间，以官方最新通知为准。</p>
         <div className="guide-links">
+          <Link className="guide-link" href="/guide/10tian-chongci">
+            <b>只剩 10 天怎么冲刺？一文说清</b>
+            <span>数据版取舍 · 一天一步日程表 · 该放弃什么直说</span>
+          </Link>
           <Link className="guide-link" href="/guide/kaodian-shuju">
             <b>考点分布数据统计（2017-2025）</b>
             <span>1735 道真题逐题标注 · 模块占比 · 章节热度 · 高频考点榜</span>

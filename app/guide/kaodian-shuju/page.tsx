@@ -251,6 +251,11 @@ export default function Page() {
             为什么刷真题划算、从哪年刷起，见
             <Link href="/guide/zhenti-chongkao">《真题重考率数据》</Link>。
           </li>
+          <li>
+            <strong>时间只剩十天？</strong>直接按
+            <Link href="/guide/10tian-chongci">《考前 10 天冲刺攻略》</Link>执行，
+            取舍和日程都替你排好了。
+          </li>
         </ul>
 
         <h2>彩虹题伴是什么</h2>

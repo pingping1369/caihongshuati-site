@@ -192,6 +192,10 @@ export default function Page() {
             <strong>高频考点单独过一遍。</strong>46 个「年年考」核心考点覆盖了 24% 的题量，
             名单和分布见<Link href="/guide/kaodian-shuju">《考点分布数据统计》</Link>。
           </li>
+          <li>
+            <strong>只剩十天的极限情况</strong>，按
+            <Link href="/guide/10tian-chongci">《考前 10 天冲刺攻略》</Link>的日程直接执行。
+          </li>
         </ul>
 
         <h2>彩虹题伴是什么</h2>
