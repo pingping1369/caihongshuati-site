@@ -8,6 +8,7 @@
 
 - [首页/产品介绍](https://caihongshuati.com/)：功能说明与产品截图
 - [真题样题在线练习](https://caihongshuati.com/questions)：8 道历年真题可在线试做
+- [2026 注册营养师预测卷 B](https://caihongshuati.com/moni/2026-b)：基于九年真题、重点加权最近三年的 100 道独立命题；逐题判题解析，完成后生成模拟分数
 - [注册营养师报考指南](https://caihongshuati.com/guide/zhuce)：报考条件、考试安排、报名入口（标注更新日期）
 - [公共营养师报考指南](https://caihongshuati.com/guide/gongying)：等级条件、费用区间、真假证书辨别
 - [两证对比](https://caihongshuati.com/guide/duibi)：注册营养师 vs 公共营养师逐项对比

@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/moni/2026",
+    "/moni/2026-b",
     "/questions",
     "/guide/tiku-pingce",
     "/guide/kaodian-shuju",
@@ -20,8 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   return routes.map((r) => ({
     url: `${SITE}${r}`,
-    lastModified: "2026-08-29",
+    lastModified: r === "/moni/2026-b" ? "2026-09-03" : "2026-08-29",
     changeFrequency: r === "" ? "weekly" : "monthly",
-    priority: r === "" ? 1 : r === "/moni/2026" ? 0.9 : r.startsWith("/guide") ? 0.8 : 0.6,
+    priority: r === "" ? 1 : r.startsWith("/moni/2026") ? 0.9 : r.startsWith("/guide") ? 0.8 : 0.6,
   }));
 }
