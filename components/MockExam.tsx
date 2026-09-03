@@ -31,14 +31,14 @@ export interface MockData {
 }
 
 const LETTERS = ["A", "B", "C", "D"];
-const KEY = "caihong-moni-2026-v1";
+const DEFAULT_STORAGE_KEY = "caihong-moni-2026-v1";
 const SUBJ_ORDER = ["食物与营养", "个体和群体营养管理", "公共营养和营养教育", "餐饮管理"];
 
 type Saved = { answers: Record<string, number>; idx: number; startedAt: number; finishedAt?: number };
 
-function load(): Saved | null {
+function load(storageKey: string): Saved | null {
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return null;
     const s = JSON.parse(raw);
     if (!s || typeof s !== "object" || !s.answers) return null;
@@ -47,10 +47,10 @@ function load(): Saved | null {
     return null;
   }
 }
-function save(s: Saved | null) {
+function save(storageKey: string, s: Saved | null) {
   try {
-    if (!s) localStorage.removeItem(KEY);
-    else localStorage.setItem(KEY, JSON.stringify(s));
+    if (!s) localStorage.removeItem(storageKey);
+    else localStorage.setItem(storageKey, JSON.stringify(s));
   } catch {
     /* 私密模式或禁用存储时静默 */
   }
@@ -66,7 +66,13 @@ function yearsNote(years: number[]) {
 }
 
 /* 模拟考：一题一屏、答一题看一题解析、做完出分。进度存 localStorage，刷新可续。 */
-export default function MockExam({ data }: { data: MockData }) {
+export default function MockExam({
+  data,
+  storageKey = DEFAULT_STORAGE_KEY,
+}: {
+  data: MockData;
+  storageKey?: string;
+}) {
   const qs = data.questions;
   const total = qs.length;
   const [phase, setPhase] = useState<"intro" | "quiz" | "result">("intro");
@@ -77,13 +83,13 @@ export default function MockExam({ data }: { data: MockData }) {
   const [saved, setSaved] = useState<Saved | null>(null);
 
   useEffect(() => {
-    setSaved(load());
-  }, []);
+    setSaved(load(storageKey));
+  }, [storageKey]);
 
   useEffect(() => {
     if (phase === "intro") return;
-    save({ answers, idx, startedAt, finishedAt: finishedAt || undefined });
-  }, [phase, answers, idx, startedAt, finishedAt]);
+    save(storageKey, { answers, idx, startedAt, finishedAt: finishedAt || undefined });
+  }, [phase, answers, idx, startedAt, finishedAt, storageKey]);
 
   useEffect(() => {
     if (phase === "quiz") window.scrollTo({ top: 0, behavior: "smooth" });
@@ -107,7 +113,7 @@ export default function MockExam({ data }: { data: MockData }) {
     }
   }
   function restart() {
-    save(null);
+    save(storageKey, null);
     setSaved(null);
     start(false);
   }
@@ -140,7 +146,11 @@ export default function MockExam({ data }: { data: MockData }) {
         <h2>开始前，先看 4 件事</h2>
         <ul>
           <li>
-            <strong>{total} 道单项选择题</strong>：前 {data.meta.singles} 题为独立单题，后 {data.meta.cases} 组为案例题（一段背景配 3 道题），与真实考试的结构一致；题量为真实考试（约 200 题、180 分钟）的一半，建议 {data.meta.minutes} 分钟内完成。
+            <strong>{total} 道单项选择题</strong>：
+            {data.meta.cases > 0
+              ? `前 ${data.meta.singles} 题为独立单题，后 ${data.meta.cases} 组为案例题（一段背景配 3 道题），与真实考试的结构一致；`
+              : "全卷均为独立单题，覆盖四大考试模块；"}
+            题量为真实考试（约 200 题、180 分钟）的一半，建议 {data.meta.minutes} 分钟内完成。
           </li>
           <li>
             <strong>答一题，看一题</strong>：点选项即判对错并展开解析，不能改答案；每题标注考点及近九年真题的考查年份。

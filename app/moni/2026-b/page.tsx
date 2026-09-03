@@ -1,9 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import PredictionExamB from "@/components/PredictionExamB";
+import MockExam, { MockData } from "@/components/MockExam";
+import WxCta from "@/components/WxCta";
 import paper from "@/data/mock-2026-b.json";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://caihongshuati.com";
+
+const data: MockData = {
+  meta: {
+    total: paper.questions.length,
+    singles: paper.questions.length,
+    cases: 0,
+    updated: paper.version,
+    examDate: "2026-09-13",
+    minutes: 90,
+  },
+  questions: paper.questions.map((question, index) => ({
+    n: index + 1,
+    subj: question.module,
+    kp: question.topic,
+    chapter: question.module,
+    years: (question.trend.match(/\d{4}/g) || []).map(Number),
+    caseId: null,
+    background: null,
+    stem: question.stem,
+    ops: question.options,
+    ans: question.answer,
+    why: question.explanation,
+    diff: "medium" as const,
+  })),
+};
 
 export const metadata: Metadata = {
   title: "2026 注册营养师预测卷 B｜100题逐题解析",
@@ -36,45 +62,40 @@ const quizJsonLd = {
 
 export default function PredictionPaperBPage() {
   return (
-    <main className="pb-main">
+    <main className="sec wrap mk-page">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(quizJsonLd) }}
       />
-      <div className="pb-wrap">
-        <PredictionExamB questions={paper.questions} version={paper.version} />
-
-        <section className="pb-method" aria-labelledby="pb-method-title">
-          <p className="pb-overline">命题说明</p>
-          <h2 id="pb-method-title">它预测的是考点，不是假装知道原题</h2>
-          <div className="pb-method-grid">
-            <p>
-              题目从 2017—2025 年现存题库的 <strong>1,659 道有效真题</strong>重新统计，2023—2025 年
-              588 道题权重最高。卷面按近三年模块比例取整：个体与群体营养管理 40 题、食物与营养 39 题、
-              公共营养与营养教育 16 题、餐饮管理 5 题。
-            </p>
-            <p>
-              同一考点可能换病例、数字和问法，所以本卷优先考迁移判断，不复刻真题句子。法规与指南题明确版本；
-              基础科学题则保留跨年稳定知识。预测无法保证命中率，模拟分只用于定位复习缺口。
-            </p>
-          </div>
-          <div className="pb-method-links">
-            <Link href="/guide/kaodian-shuju">查看历年考点分布数据</Link>
-            <Link href="/guide/zhenti-chongkao">理解真题考点重考率</Link>
-            <a href="https://www.cnsoc.org/drpostand/" target="_blank" rel="noreferrer">
-              中国居民 DRIs（2023版）↗
-            </a>
-            <a
-              href="https://www.nhc.gov.cn/wjw/ylyjs/202412/b3d40e0141834897808ce6c9dce76a60.shtml"
-              target="_blank"
-              rel="noreferrer"
-            >
-              体重管理指导原则（2024年版）↗
-            </a>
-          </div>
-          <p className="pb-method-date">独立命题与复核：2026-09-03 · 不进入小程序题库</p>
-        </section>
+      <div className="mk-hero">
+        <span className="kicker">2026 预测卷 B</span>
+        <h1>2026 注册营养师考试预测卷 B</h1>
+        <p className="lede">
+          {data.meta.total} 道单选题，按历年真题考频独立命制，最近三年权重最高。答一题看一题解析，做完出模拟分。
+        </p>
+        <p className="meta">
+          更新于 {data.meta.updated} · 考试日 {data.meta.examDate} · 建议用时 {data.meta.minutes} 分钟
+        </p>
       </div>
+
+      <MockExam data={data} storageKey="caihong-moni-2026-b-v2" />
+
+      <div className="card article mk-method">
+        <h2>这套题是怎么出的</h2>
+        <p>
+          <strong>考点从历年数据里来。</strong>本卷基于 2017—2025 年现存题库的 1,659 道有效真题重新统计，重点加权 2023—2025 年考题，再按近三年模块比例分配为：个体和群体营养管理 40 题、食物与营养 39 题、公共营养和营养教育 16 题、餐饮管理 5 题。
+        </p>
+        <p>
+          <strong>题目是独立命制的。</strong>同一考点会更换病例、数字和问法，训练的是知识迁移，不复刻真题句子；法规与指南题按现行版本复核，基础科学题保留跨年稳定知识。
+        </p>
+        <p>
+          <strong>预测的是考点，不是假装知道原题。</strong>没有任何模拟卷能承诺命中率，模拟分只用于定位复习缺口。做完后可结合<Link href="/guide/kaodian-shuju">考点分布数据</Link>和<Link href="/guide/zhenti-chongkao">真题重考率</Link>安排下一轮复习。
+        </p>
+        <p className="src-note">
+          本卷为彩虹题伴独立命题的预测练习，非官方真题，不进入小程序题库；考试范围以官方考纲为准，分数不构成任何合格判定。
+        </p>
+      </div>
+      <WxCta />
     </main>
   );
 }
