@@ -388,3 +388,12 @@ img { max-width: 100%; display: block; }
   .nav-links { gap: 12px; font-size: 13px; }
   .nav-links a:last-child { display: none; }
 }
+
+/* —— 新政热点页：折叠示范题 —— */
+details.qa { border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 14px 0; background: #fbfcfe; }
+details.qa summary { cursor: pointer; font-size: 15px; color: var(--ink); font-weight: 600; }
+details.qa summary::marker { color: var(--blue); }
+details.qa .qa-ops { margin: 10px 0 4px; padding-left: 0; list-style: none; }
+details.qa .qa-ops li { margin: 5px 0; font-size: 14.5px; }
+details.qa .qa-ans { border-top: 1px dashed var(--line); margin-top: 10px; padding-top: 10px; font-size: 14.5px; }
+details.qa .qa-ans b { color: var(--blue); }

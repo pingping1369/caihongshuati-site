@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/kaodian-shuju",
     "/guide/zhenti-chongkao",
     "/guide/10tian-chongci",
+    "/guide/xinzheng-redian",
     "/guide/zhuce",
     "/guide/gongying",
     "/guide/duibi",
