@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
+import YatiCard from "@/components/YatiCard";
 
 export const metadata: Metadata = {
   title: "注册营养师 2026 新政押题：17 个新政考点，每个出一道题",
@@ -364,7 +365,7 @@ export default function Page() {
 
         <h2>17 道新政预测题</h2>
         <p>
-          按四条线组织。每道题点开看答案——建议先自己选，再看解析里的「为什么这么考」。
+          按四条线组织，和小程序里一样：<strong>先选，选完才出判色、答案和解析</strong>——别急着看依据，先押一把。
         </p>
 
         {GROUPS.map((g) => (
@@ -374,25 +375,10 @@ export default function Page() {
             {g.qs.map((q) => {
               qNo += 1;
               return (
-                <details className="qa" key={q.kp}>
-                  <summary>
-                    押题 {qNo} · {q.kp} —— {q.hook}
-                  </summary>
-                  <p style={{ marginTop: 10 }}>{q.stem}</p>
-                  <ul className="qa-ops">
-                    {q.ops.map((o, i) => (
-                      <li key={i}>
-                        {String.fromCharCode(65 + i)}. {o}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="qa-ans">
-                    <b>答案：{String.fromCharCode(65 + q.ans)}。</b>
-                    {q.why}
-                    <br />
-                    <span style={{ color: "var(--muted)", fontSize: "13px" }}>依据：{q.src}</span>
-                  </p>
-                </details>
+                <YatiCard
+                  key={q.kp}
+                  q={{ n: qNo, kp: q.kp, stem: q.stem, ops: q.ops, ans: q.ans, why: q.why, src: q.src }}
+                />
               );
             })}
           </section>
