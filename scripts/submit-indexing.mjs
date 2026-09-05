@@ -42,7 +42,8 @@ if (engine === 'indexnow') {
 } else {
   const token = process.env.BAIDU_PUSH_TOKEN;
   assert.ok(token, 'set BAIDU_PUSH_TOKEN privately; never commit it');
-  endpoint = `https://data.zz.baidu.com/urls?site=${encodeURIComponent(site.href)}&token=${encodeURIComponent(token)}`;
+  // 百度站长后台提供的官方推送地址是 HTTP；不通过关闭 TLS 校验绕过 HTTPS 的证书错误。
+  endpoint = `http://data.zz.baidu.com/urls?site=${site.origin}&token=${encodeURIComponent(token)}`;
   body = urls.join('\n');
   headers = { 'Content-Type': 'text/plain; charset=utf-8' };
 }
@@ -51,10 +52,10 @@ try {
   const raw = await response.text();
   // Do not log request URL, token, or verification key.
   const receipt = engine === 'baidu' ? JSON.parse(raw) : undefined;
-  console.log(JSON.stringify({ engine, httpStatus: response.status, submittedCount: urls.length, receipt, meaning: 'received/accepted is not indexed' }, null, 2));
+  console.log(JSON.stringify({ engine, httpStatus: response.status, attemptedCount: urls.length, acceptedCount: receipt?.success ?? (response.ok ? urls.length : 0), receipt, meaning: 'received/accepted is not indexed' }, null, 2));
   assert.ok(response.ok, 'submission rejected');
   if (receipt) assert.equal(receipt.success, urls.length, 'Baidu did not accept every URL; inspect quota/receipt');
 } catch (error) {
-  console.error(`Submission failed: ${error.name}. Inspect the sanitized receipt above; do not automatically retry.`);
+  console.error(`Submission failed: ${error.name}${error.cause?.code ? ` (${error.cause.code})` : ''}. Inspect the sanitized receipt above; do not automatically retry.`);
   process.exitCode = 1;
 }
