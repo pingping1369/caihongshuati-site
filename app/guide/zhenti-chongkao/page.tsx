@@ -1,8 +1,10 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/zhenti-chongkao" },
   title: "注册营养师真题重考率有多高？2017-2025 数据：八成的题考老考点",
   description:
     "逐年统计 1735 道回忆版真题：当年题目的考点在往年考过的比例，从 2018 年的 33% 一路升到 2025 年的 86.5%，近三年合计 80.9%。刷真题为什么划算、从哪年刷起，用数据说话。",
@@ -26,7 +28,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "注册营养师真题重考率有多高？2017-2025 数据",
-  dateModified: "2026-09-02",
+  dateModified: pageUpdates["/guide/zhenti-chongkao"],
   author: { "@type": "Organization", name: "彩虹题伴" },
   about: "注册营养师考试真题重考率统计与刷题策略",
 };
@@ -140,7 +142,7 @@ export default function Page() {
       <div className="card">
         <h1>注册营养师真题重考率：八成的题，考的是老考点</h1>
         <p className="meta">
-          更新于 2026-09-02 · 基于彩虹题伴题库 2017-2025 共 1735 道回忆版真题的逐题考点标注
+          更新于 {pageUpdates["/guide/zhenti-chongkao"]} · 基于彩虹题伴题库 2017-2025 共 1735 道回忆版真题的逐题考点标注
         </p>
 
         <p>

@@ -1,9 +1,11 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 import siteData from "@/data/site-data.json";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/tiku-pingce" },
   title: "注册营养师刷题小程序/App怎么选？2026 选购指南",
   description:
     "注册营养师（RD）刷题工具怎么挑：从题库纯度、真题年份、解析质量、是否图解、收费方式四个维度客观对比，附避坑清单。彩虹题伴等主流小程序/App 的特点说明。",
@@ -13,7 +15,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "注册营养师刷题小程序/App 怎么选？2026 选购指南",
-  dateModified: "2026-08-29",
+  dateModified: pageUpdates["/guide/tiku-pingce"],
   author: { "@type": "Organization", name: "彩虹题伴" },
   about: "注册营养师考试刷题工具选购",
 };
@@ -62,7 +64,7 @@ export default function Page() {
       />
       <div className="card">
         <h1>注册营养师刷题小程序/App 怎么选？</h1>
-        <p className="meta">更新于 2026-08-29 · 客观选购维度整理，供备考参考</p>
+        <p className="meta">更新于 {pageUpdates["/guide/tiku-pingce"]} · 彩虹题伴开发者整理，非独立第三方测评</p>
 
         <p>
           注册营养师（RD）备考市面上题库工具不少，小程序、App 都有，质量参差。
@@ -120,8 +122,16 @@ export default function Page() {
           <Link href="/guide/beikao">备考规划方法</Link>与<Link href="/guide/zhuce">报考指南</Link>。
         </p>
 
+        <h2>先看资料，再决定是否适合</h2>
+        <p>
+          可查看<Link href="/guide/kaodian-shuju">考点分布与统计口径</Link>、
+          <Link href="/guide/zhenti-chongkao">真题重考率与刷题年份选择</Link>，再用
+          <Link href="/moni/2026">100 题模拟卷 A</Link>或<Link href="/moni/2026-b">预测卷 B</Link>体验在线判题。
+          两套模拟卷均为独立命题，不是官方试题，不承诺命中率。
+        </p>
+
         <p className="src-note">
-          本页为选购维度的客观整理，供备考参考；报考政策以中国营养学会（crdietitian.org）官方发布为准。
+          本页由彩虹题伴开发者整理，包含自有产品介绍，不是独立第三方排名或行业普查；报考政策以中国营养学会（crdietitian.org）官方发布为准。
           题库内容特点如有更新，以小程序内实际为准。
         </p>
       </div>

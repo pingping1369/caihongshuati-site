@@ -1,8 +1,10 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/gongying" },
   title: "公共营养师报考指南：等级、条件、费用与防坑",
   description:
     "公共营养师职业技能等级证书报考指南：证书性质、四级/三级/二级报考条件、报名方式与费用区间、真假证书辨别方法。更新于 2026 年 8 月。",
@@ -12,7 +14,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "公共营养师报考指南：等级、条件、费用与防坑",
-  dateModified: "2026-08-22",
+  dateModified: pageUpdates["/guide/gongying"],
   author: { "@type": "Organization", name: "彩虹题伴" },
 };
 
@@ -25,7 +27,7 @@ export default function Page() {
       />
       <div className="card">
         <h1>公共营养师报考指南</h1>
-        <p className="meta">更新于 2026-08-22 · 以各地人社部门与评价机构官方发布为准</p>
+        <p className="meta">更新于 {pageUpdates["/guide/gongying"]} · 以各地人社部门与评价机构官方发布为准</p>
 
         <p>
           公共营养师现在的形态是<strong>职业技能等级证书</strong>：2016 年国家统考取消后，改由人社部门备案的

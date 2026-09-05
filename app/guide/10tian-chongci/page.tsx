@@ -1,8 +1,10 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/10tian-chongci" },
   title: "注册营养师只剩 10 天怎么冲刺？数据版攻略，一文说清",
   description:
     "考前只剩 10 天的务实方案：先说清 10 天能做到什么、该放弃什么，再给一天一步的冲刺表。取舍全部基于 1735 道真题实测：只刷近三年能覆盖下一场约六成题的考点，46 个核心考点再补 26%。",
@@ -16,7 +18,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "注册营养师只剩 10 天怎么冲刺？数据版攻略",
-  dateModified: "2026-09-03",
+  dateModified: pageUpdates["/guide/10tian-chongci"],
   author: { "@type": "Organization", name: "彩虹题伴" },
   about: "注册营养师考试考前10天冲刺计划",
 };
@@ -94,7 +96,7 @@ export default function Page() {
       <div className="card">
         <h1>只剩 10 天：注册营养师冲刺攻略，一文说清</h1>
         <p className="meta">
-          更新于 2026-09-03 · 取舍依据来自 1735 道回忆版真题 × 732 个考点的逐题标注统计
+          更新于 {pageUpdates["/guide/10tian-chongci"]} · 取舍依据来自 1735 道回忆版真题 × 732 个考点的逐题标注统计
         </p>
 
         <p>

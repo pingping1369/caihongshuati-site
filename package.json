@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/check-seo.mjs --source && next build && node scripts/check-seo.mjs",
+    "check:seo": "node scripts/check-seo.mjs",
+    "submit:indexnow": "node scripts/submit-indexing.mjs --engine=indexnow",
+    "submit:baidu": "node scripts/submit-indexing.mjs --engine=baidu",
     "start": "next start",
     "lint": "next lint"
   },

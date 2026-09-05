@@ -1,8 +1,10 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/kaodian-shuju" },
   title: "注册营养师考点分布数据统计（2017-2025）：模块占比与高频考点",
   description:
     "基于 1735 道回忆版真题 × 732 个考点的逐题标注统计：四大模块题量占比、章节热度 TOP10、高频考点排行。46 个年年考的核心考点覆盖了 24% 的题目。",
@@ -48,7 +50,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "注册营养师考点分布数据统计（2017-2025）：模块占比与高频考点",
-  dateModified: "2026-09-02",
+  dateModified: pageUpdates["/guide/kaodian-shuju"],
   author: { "@type": "Organization", name: "彩虹题伴" },
   about: "注册营养师考试考点分布与高频考点数据统计",
 };
@@ -128,7 +130,7 @@ export default function Page() {
       <div className="card">
         <h1>注册营养师考点分布数据（2017-2025）：题都出在哪？</h1>
         <p className="meta">
-          更新于 2026-09-02 · 基于彩虹题伴题库 1735 道回忆版真题 × 732 个考点的逐题标注统计
+          更新于 {pageUpdates["/guide/kaodian-shuju"]} · 基于彩虹题伴题库 1735 道回忆版真题 × 732 个考点的逐题标注统计
         </p>
 
         <p>

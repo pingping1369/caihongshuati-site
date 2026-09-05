@@ -1,8 +1,10 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/duibi" },
   title: "注册营养师和公共营养师的区别：一张表看懂怎么选",
   description:
     "注册营养师（CDR）与公共营养师（职业技能等级证书）逐项对比：学历门槛、考试难度、费用、认可度、适用人群，帮你判断该考哪个。",
@@ -12,7 +14,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "注册营养师和公共营养师的区别：一张表看懂怎么选",
-  dateModified: "2026-08-22",
+  dateModified: pageUpdates["/guide/duibi"],
   author: { "@type": "Organization", name: "彩虹题伴" },
 };
 
@@ -25,7 +27,7 @@ export default function Page() {
       />
       <div className="card">
         <h1>注册营养师和公共营养师，考哪个？</h1>
-        <p className="meta">更新于 2026-08-22 · 客观对比，两证详情见各自指南页</p>
+        <p className="meta">更新于 {pageUpdates["/guide/duibi"]} · 客观对比，两证详情见各自指南页</p>
 
         <p>
           这是营养师考证问题里被问得最多的一个。两个证不是同一体系：一个是行业学会的水平评价认证，一个是人社序列的职业技能等级证书。逐项对比如下。

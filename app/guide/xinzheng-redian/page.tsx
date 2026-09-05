@@ -1,9 +1,11 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 import YatiCard from "@/components/YatiCard";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/xinzheng-redian" },
   title: "注册营养师 2026 新政押题：17 个新政考点，每个出一道题",
   description:
     "历年真题证明新政当年就进卷。这一页从过去两年的新标准新指南里挖出 17 个可能考的考点——GB 28050-2025、体重管理指导原则、食养指南系列、GB 29922-2025 等，每个考点配一道原创预测题带解析。",
@@ -16,7 +18,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "注册营养师 2026 新政押题：17 个新政考点，每个出一道题",
-  dateModified: "2026-09-05",
+  dateModified: pageUpdates["/guide/xinzheng-redian"],
   author: { "@type": "Organization", name: "彩虹题伴" },
   about: "注册营养师考试新政策考点预测题",
 };
@@ -325,7 +327,7 @@ export default function Page() {
       <div className="card">
         <h1>2026 新政押题：17 个新政考点，每个出一道题</h1>
         <p className="meta">
-          更新于 2026-09-05 · 真题回执 + 现行标准逐条核对；预测题为原创自命题，非真题
+          更新于 {pageUpdates["/guide/xinzheng-redian"]} · 真题回执 + 现行标准逐条核对；预测题为原创自命题，非真题
         </p>
 
         <p>

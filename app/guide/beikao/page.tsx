@@ -1,9 +1,11 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 import siteData from "@/data/site-data.json";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/beikao" },
   title: "营养师考试考什么？科目题型与备考规划",
   description:
     "注册营养师与公共营养师考试科目、题型说明，以及一套按记忆规律设计的备考方法：真题为纲、图解记忆、间隔重复、错题闭环。",
@@ -13,7 +15,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "营养师考试考什么？科目题型与备考规划",
-  dateModified: "2026-08-22",
+  dateModified: pageUpdates["/guide/beikao"],
   author: { "@type": "Organization", name: "彩虹题伴" },
 };
 
@@ -26,7 +28,7 @@ export default function Page() {
       />
       <div className="card">
         <h1>营养师考试考什么？怎么备考？</h1>
-        <p className="meta">更新于 2026-08-22 · 考务细节以当年官方考务通知为准</p>
+        <p className="meta">更新于 {pageUpdates["/guide/beikao"]} · 考务细节以当年官方考务通知为准</p>
 
         <h2>考什么</h2>
         <p>
@@ -66,6 +68,14 @@ export default function Page() {
           <li>公共营养师：普遍 2-3 个月；</li>
           <li>注册营养师：知识量大，建议 3-6 个月起，在职备考适当拉长；</li>
           <li>无论周期长短，最后 2-4 周留给模拟考与错题清算。</li>
+        </ul>
+
+        <h2>注册营养师复习资料与在线练习</h2>
+        <ul>
+          <li>确定复习重点：<Link href="/guide/kaodian-shuju">2017-2025 考点分布与高频考点</Link>。</li>
+          <li>决定先刷哪年：<Link href="/guide/zhenti-chongkao">真题重考率与近三年覆盖率</Link>。</li>
+          <li>考前查漏：<Link href="/guide/10tian-chongci">10 天冲刺安排</Link>、<Link href="/guide/xinzheng-redian">2026 新政预测题</Link>。</li>
+          <li>整卷练习：<Link href="/moni/2026">模拟卷 A</Link>、<Link href="/moni/2026-b">预测卷 B</Link>（均为自命题，不是官方试卷）。</li>
         </ul>
 
         <h2>把方法变成日常</h2>

@@ -7,6 +7,7 @@ import mock from "@/data/mock-2026.json";
 const data = mock as MockData;
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/moni/2026" },
   title: "2026 注册营养师考试模拟题：100 题在线做，答一题看一题解析",
   description:
     "按 2017-2025 九年回忆版真题的考点考频（近三年加权）出的 2026 注册营养师模拟卷：100 道单选，前 64 题单题、后 12 组案例题，逐题解析并标注考点考查年份，做完给出模拟分和各模块正确率。",

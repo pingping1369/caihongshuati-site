@@ -3,6 +3,7 @@ import Link from "next/link";
 import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faq" },
   title: "常见问题",
   description:
     "关于彩虹题伴小程序与营养师报考的常见问题：是否免费、题库来源、注册营养师和公共营养师怎么选、如何辨别真假证书等。",
@@ -192,7 +193,7 @@ export default function FaqPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
         <div className="sec-h">
-          <h2>常见问题</h2>
+          <h1>彩虹题伴与营养师报考常见问题</h1>
         </div>
         <p className="sec-sub">关于产品，也关于报考。没找到答案可在小程序内反馈。</p>
         <div className="faq-list">

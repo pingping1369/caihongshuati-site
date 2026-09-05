@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "关于本站",
   description: "彩虹题伴官网：站点定位、内容方法与联系方式。",
 };

@@ -2,7 +2,7 @@
 
 微信小程序「彩虹题伴」（注册营养师真题图解题库）的官方网站。
 
-- 线上：https://caihongshuati-site.vercel.app （自定义域名 caihongshuati.com 待绑定）
+- 线上：https://caihongshuati.com （www 和原 Vercel 域名重定向至主域）
 - 仓库：https://github.com/pingping1369/caihongshuati-site
 
 ## 这个站是干嘛的
@@ -15,7 +15,7 @@
 ## 技术栈
 
 Next.js 15 App Router，全站 SSG（全部路由静态预渲染），Vercel 部署。
-无数据库、无后端、无鉴权——纯内容站，改完 push 即自动部署。
+无数据库、无后端、无鉴权。当前发布使用 `vercel --prod --yes`；不要将 git push 当作已上线。
 
 ## 目录
 
@@ -59,3 +59,24 @@ pnpm build    # 构建校验
 
 - `NEXT_PUBLIC_SITE_URL`：站点绝对地址，影响 sitemap/robots/OG（默认 https://caihongshuati.com）
 - `NEXT_PUBLIC_GA_ID`：Google Analytics 4 衡量 ID，不填则不注入埋点
+
+## 新页面收录与发布闸门
+
+1. 新建页面时提供唯一标题、描述、H1 和 `metadata.alternates.canonical`（自身路径，不可都指向首页），并从相关页面添加普通 HTML 链接。
+2. 在 `data/page-updates.json` 登记路径与真实内容更新时间。sitemap 从它生成，指南的 JSON-LD 与可见更新日期也读取它。只改样式/构建/规范 URL 不自动刷新内容日期；正文、统计或重要链接有实质更新才改。
+3. `pnpm build` 自动检查路由遗漏、日期、规范 URL、可索引性、唯一标题、H1、JSON-LD 日期和首页可达性。构建失败不能部署。
+4. `vercel --prod --yes`，再运行 `pnpm check:seo --base=https://caihongshuati.com`，必须检查生产域名，不提交预览地址。
+5. 对本次新增/实质更新的页面提交，先 dry run，再加 `--submit`。无 URL 参数会选全站，只用于首次接入或确认的整站更新，不能每天重复推全站。
+
+```bash
+pnpm submit:indexnow --url=/guide/xinzheng-redian
+pnpm submit:indexnow --url=/guide/xinzheng-redian --submit
+# 百度 token 从站长后台读取，私下通过 BAIDU_PUSH_TOKEN 环境变量传入，禁止入库或打印。
+pnpm submit:baidu --url=/guide/xinzheng-redian --submit
+```
+
+IndexNow 使用已部署的根目录验证文件；脚本先核验生产页面及 canonical，再发到 Bing 的 IndexNow 接口，由协议参与引擎共享。HTTP 200=已接收、202=接收待验证，不代表已索引。百度有每日配额，以返回的 success/remain 为准，不自动重试失败提交。
+
+Google：在既有 GSC 资源重新提交更新的 sitemap，并对少量重点新页使用 URL 检查的“请求编入索引”。不要把普通内容页送 Google 的专用 Indexing API。Bing 也可重新提交 sitemap。每次把明确回执、URL 清单和未完成原因记录到主仓库 `增长专项/行动日志.md`；API token、账号 Cookie 不写入记录。
+
+参考：[Google 请求重新抓取](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)、[IndexNow 协议](https://www.indexnow.org/documentation)。

@@ -1,8 +1,10 @@
+import pageUpdates from "@/data/page-updates.json";
 import type { Metadata } from "next";
 import Link from "next/link";
 import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/guide/zhuce" },
   title: "注册营养师报考指南：条件、时间、报名入口",
   description:
     "注册营养师（中国营养学会 CDR）报考条件、考试时间安排、报名方式与费用、证书注册与继续教育要求，信息更新于 2026 年 8 月，以官方通知为准。",
@@ -12,7 +14,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "注册营养师报考指南：条件、时间、报名入口",
-  dateModified: "2026-08-22",
+  dateModified: pageUpdates["/guide/zhuce"],
   author: { "@type": "Organization", name: "彩虹题伴" },
 };
 
@@ -25,7 +27,7 @@ export default function Page() {
       />
       <div className="card">
         <h1>注册营养师报考指南</h1>
-        <p className="meta">更新于 2026-08-22 · 报考政策以中国营养学会官方发布为准</p>
+        <p className="meta">更新于 {pageUpdates["/guide/zhuce"]} · 报考政策以中国营养学会官方发布为准</p>
 
         <p>
           注册营养师（Registered Dietitian，简称 RD）是<strong>中国营养学会</strong>
@@ -55,7 +57,7 @@ export default function Page() {
         <ul>
           <li>每年组织 1-2 次统一考试，具体日期见中国营养学会当年通知；</li>
           <li>形式为线下机考，以单项选择题为主，历年公开资料口径约 200 题、180 分钟（以当年考务通知为准）；</li>
-          <li>2026 年考试安排请以官方发布为准——截至本页更新时，官方尚未发布全年通知。</li>
+          <li>2026 年的考试日期、报名截止时间与准考证安排，请核对中国营养学会当年官方通知；本页的通用报考信息不能替代年度通知。</li>
         </ul>
 
         <h2>报名方式与费用</h2>

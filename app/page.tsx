@@ -3,6 +3,8 @@ import QuestionCard, { Sample } from "@/components/QuestionCard";
 import WxCta from "@/components/WxCta";
 import siteData from "@/data/site-data.json";
 
+export const metadata = { alternates: { canonical: "/" } };
+
 const samples = siteData.samples as Sample[];
 
 function Phone({ src, alt }: { src: string; alt: string }) {
