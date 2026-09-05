@@ -226,8 +226,8 @@ export default function Page() {
             一张结构图先把框架立住，细节往框架里填，记得快忘得慢。
           </li>
           <li>
-            <strong>新政题单独扫一遍。</strong>过去一年的新指南新标准几乎必考（历年如此），
-            半小时能扫完的清单见<Link href="/guide/xinzheng-redian">《2026 考点前瞻：新政与热点》</Link>。
+            <strong>新政题单独扫一遍。</strong>过去两年的新指南新标准几乎必考（历年如此），
+            17 道按新政出的预测题半小时能做完，见<Link href="/guide/xinzheng-redian">《2026 新政押题》</Link>。
           </li>
           <li>
             <strong>高频考点名单在手边。</strong>46 个核心考点是哪些、各模块题量怎么分布，见

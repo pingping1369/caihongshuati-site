@@ -206,8 +206,8 @@ export default function Home() {
             <span>数据版取舍 · 一天一步日程表 · 该放弃什么直说</span>
           </Link>
           <Link className="guide-link" href="/guide/xinzheng-redian">
-            <b>2026 考点前瞻：新政与热点会怎么考</b>
-            <span>新政当年就进卷的证据 · 五个最值得盯的热点 · 附示范题</span>
+            <b>2026 新政押题：17 个考点，每个一道题</b>
+            <span>新政当年就进卷的证据 · 17 道原创预测题带解析与依据</span>
           </Link>
           <Link className="guide-link" href="/guide/kaodian-shuju">
             <b>考点分布数据统计（2017-2025）</b>
