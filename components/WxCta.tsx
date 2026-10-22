@@ -6,16 +6,16 @@ export default function WxCta() {
       <div className="cta-band">
         <div>
           <h2>现在就开始刷题</h2>
-          <p>免费使用，无需下载安装——打开微信就能开始。</p>
+          <p>新用户注册即送一个月会员，无需下载安装——打开微信就能开始。</p>
           <div className="wx-steps">
             <span>1. 打开微信</span>
             <span>2. 顶部搜索框搜索</span>
             <span>
-              3. 「<b>彩虹题伴</b>」
+              3. 「<b>彩虹刷题</b>」
             </span>
           </div>
         </div>
-        <img src="/img/mascot.png" alt="彩虹题伴吉祥物彩虹小人" className="mascot-sm" />
+        <img src="/img/mascot.png" alt="彩虹刷题吉祥物彩虹小人" className="mascot-sm" />
       </div>
     </section>
   );

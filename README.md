@@ -1,6 +1,6 @@
-# 彩虹题伴官网
+# 彩虹刷题官网
 
-微信小程序「彩虹题伴」（注册营养师真题图解题库）的官方网站。
+微信小程序「彩虹刷题」（注册营养师真题图解题库）的官方网站。
 
 - 线上：https://caihongshuati.com （www 和原 Vercel 域名重定向至主域）
 - 仓库：https://github.com/pingping1369/caihongshuati-site

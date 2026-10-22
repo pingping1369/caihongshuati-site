@@ -58,7 +58,7 @@ export default function QuestionCard({ q }: { q: Sample }) {
             </figure>
           )}
           <span className="more">
-            完整解析和这道题的图解考点，在小程序里——微信搜一搜「彩虹题伴」
+            完整解析和这道题的图解考点，在小程序里——微信搜一搜「彩虹刷题」
           </span>
         </div>
       )}

@@ -21,7 +21,7 @@ export default function QuestionsPage() {
         </div>
         <p className="sec-sub">
           {samples.length} 道历年真题原题，覆盖四大模块。点选项作答，对错判色与解析节选和小程序一致——完整题库共{" "}
-          {siteData.totalQuestions} 道（2017-2025）。
+          {siteData.totalQuestions} 道（2017-2026）。
         </p>
         <div className="qgrid">
           {samples.map((q) => (

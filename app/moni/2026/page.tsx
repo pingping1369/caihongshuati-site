@@ -22,7 +22,7 @@ const jsonLd = {
   educationalLevel: "职业资格",
   numberOfQuestions: data.meta.total,
   dateModified: data.meta.updated,
-  author: { "@type": "Organization", name: "彩虹题伴" },
+  author: { "@type": "Organization", name: "彩虹刷题" },
 };
 
 export default function Page() {
@@ -54,10 +54,10 @@ export default function Page() {
           <strong>能押中多少，先用往年验证。</strong>用同一套方法回测：只用 2023 年及以前的数据选题去对 2024 年真题、只用 2024 年及以前的数据去对 2025 年真题，模拟卷中约六成题目的考点在当年真题中直接出现，按章节口径超过 95%。考试每年从 600 多个考点中抽约 165 个，没有任何一套题能全部押中，把做错的考点补掉才是这套卷的用法。
         </p>
         <p>
-          做完想系统补考点：<Link href="/guide/kaodian-shuju">考点分布数据</Link>列出了 46 个年年考的核心考点，<Link href="/guide/zhenti-chongkao">真题重考率</Link>解释了为什么倒序刷近三年真题最划算。
+          做完想系统补考点：<Link href="/guide/kaodian-shuju">考点分布数据</Link>列出了反复被考的核心考点，<Link href="/guide/zhenti-chongkao">真题重考率</Link>解释了为什么倒序刷近三年真题最划算。
         </p>
         <p className="src-note">
-          本卷为彩虹题伴自命题模拟题，非官方真题；考点统计基于考生回忆版真题（中国营养学会不公布官方真题），考试范围以官方考纲为准。分数仅用于自我估计，不构成任何合格判定。
+          本卷为彩虹刷题自命题模拟题，非官方真题；考点统计基于考生回忆版真题（中国营养学会不公布官方真题），考试范围以官方考纲为准。分数仅用于自我估计，不构成任何合格判定。
         </p>
       </div>
       <WxCta />

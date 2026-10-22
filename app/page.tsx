@@ -28,7 +28,7 @@ export default function Home() {
             <span className="hl">一图一题</span>，学得进去
           </h1>
           <p className="lede">
-            彩虹题伴是一个微信小程序：历年真题逐题配白板图解，刷题计划按你的考试日期和记忆曲线自动排——每天打开，直接开始。
+            彩虹刷题是一个微信小程序：历年真题逐题配白板图解，刷题计划按你的考试日期和记忆曲线自动排——每天打开，直接开始。
           </p>
           <div className="stats">
             <div className="stat">
@@ -40,7 +40,7 @@ export default function Home() {
               <span>图解考点</span>
             </div>
             <div className="stat">
-              <b className="num">2017-2025</b>
+              <b className="num">2017-2026</b>
               <span>覆盖年份</span>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual">
-          <img className="mascot" src="/img/mascot.png" alt="彩虹题伴吉祥物：彩虹小人" />
+          <img className="mascot" src="/img/mascot.png" alt="彩虹刷题吉祥物：彩虹小人" />
           <img className="sticker s1" src="/img/food-broccoli.png" alt="" />
           <img className="sticker s2" src="/img/food-carrot.png" alt="" />
           <img className="sticker s3" src="/img/food-milk.png" alt="" />
@@ -107,7 +107,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="feat-img">
-            <Phone src="/img/screens/03-home.png" alt="彩虹题伴首页：今日学习队列与连学周历" />
+            <Phone src="/img/screens/03-home.png" alt="彩虹刷题首页：今日学习队列与连学周历" />
           </div>
         </div>
 
@@ -150,7 +150,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="feat-img">
-            <Phone src="/img/screens/12-plan.png" alt="彩虹题伴备考计划：每日题量自动计算与题量预告" />
+            <Phone src="/img/screens/12-plan.png" alt="彩虹刷题备考计划：每日题量自动计算与题量预告" />
           </div>
         </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="feat-img">
-            <Phone src="/img/screens/13-graph-l1.png" alt="彩虹题伴大纲页：四大模块与学习进度" />
+            <Phone src="/img/screens/13-graph-l1.png" alt="彩虹刷题大纲页：四大模块与学习进度" />
           </div>
         </div>
       </section>
@@ -212,12 +212,12 @@ export default function Home() {
             <span>新政当年就进卷的证据 · 17 道原创预测题带解析与依据</span>
           </Link>
           <Link className="guide-link" href="/guide/kaodian-shuju">
-            <b>考点分布数据统计（2017-2025）</b>
-            <span>1735 道真题逐题标注 · 模块占比 · 章节热度 · 高频考点榜</span>
+            <b>考点分布数据统计（2017-2026）</b>
+            <span>1850 道真题逐题标注 · 模块占比 · 章节热度 · 高频考点榜</span>
           </Link>
           <Link className="guide-link" href="/guide/zhenti-chongkao">
             <b>真题重考率：八成的题考老考点</b>
-            <span>逐年重考率 33%→86.5% · 数据推出来的刷题策略</span>
+            <span>逐年重考率 30%→八成 · 数据推出来的刷题策略</span>
           </Link>
           <Link className="guide-link" href="/guide/zhuce">
             <b>注册营养师报考指南</b>

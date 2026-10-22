@@ -55,7 +55,7 @@ const quizJsonLd = {
   isAccessibleForFree: true,
   provider: {
     "@type": "Organization",
-    name: "彩虹题伴",
+    name: "彩虹刷题",
     url: SITE,
   },
 };
@@ -92,7 +92,7 @@ export default function PredictionPaperBPage() {
           <strong>预测的是考点，不是假装知道原题。</strong>没有任何模拟卷能承诺命中率，模拟分只用于定位复习缺口。做完后可结合<Link href="/guide/kaodian-shuju">考点分布数据</Link>和<Link href="/guide/zhenti-chongkao">真题重考率</Link>安排下一轮复习。
         </p>
         <p className="src-note">
-          本卷为彩虹题伴独立命题的预测练习，非官方真题，不进入小程序题库；考试范围以官方考纲为准，分数不构成任何合格判定。
+          本卷为彩虹刷题独立命题的预测练习，非官方真题，不进入小程序题库；考试范围以官方考纲为准，分数不构成任何合格判定。
         </p>
       </div>
       <WxCta />

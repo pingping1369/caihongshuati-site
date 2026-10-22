@@ -8,20 +8,20 @@ const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://caihongshuati.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: {
-    default: "彩虹题伴 - 注册营养师真题图解题库",
-    template: "%s - 彩虹题伴",
+    default: "彩虹刷题 - 注册营养师真题图解题库",
+    template: "%s - 彩虹刷题",
   },
   description:
-    "彩虹题伴是注册营养师考试刷题小程序：收录 2017-2025 历年真题 1735 道、732 个图解考点，刷题计划按记忆曲线自适应排期。微信搜一搜「彩虹题伴」即可使用。",
+    "彩虹刷题是注册营养师考试刷题小程序：收录 2017-2026 历年真题 1850 道、864 个图解考点，刷题计划按记忆曲线自适应排期。微信搜一搜「彩虹刷题」即可使用。",
   keywords: [
     "注册营养师", "公共营养师", "营养师题库", "营养师真题",
-    "营养师考试", "营养师报考条件", "彩虹题伴",
+    "营养师考试", "营养师报考条件", "彩虹刷题",
   ],
   openGraph: {
-    title: "彩虹题伴 - 注册营养师真题图解题库",
-    description: "历年真题 + 图解考点 + 记忆曲线排期，微信小程序免费刷题。",
+    title: "彩虹刷题 - 注册营养师真题图解题库",
+    description: "历年真题 + 图解考点 + 记忆曲线排期，微信小程序刷题，新用户注册即送一个月会员。",
     url: SITE,
-    siteName: "彩虹题伴",
+    siteName: "彩虹刷题",
     images: ["/img/mascot.png"],
     locale: "zh_CN",
     type: "website",
@@ -43,8 +43,7 @@ export const metadata: Metadata = {
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "彩虹题伴",
-  alternateName: "彩虹题伴图解营养题库",
+  name: "彩虹刷题",
   url: SITE,
   description:
     "注册营养师考试刷题小程序官网：历年真题、图解考点、记忆曲线排期。",
@@ -61,8 +60,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="nav">
           <div className="wrap nav-inner">
             <Link href="/" className="brand">
-              <img src="/img/mascot.png" alt="彩虹题伴吉祥物" />
-              彩虹题伴
+              <img src="/img/mascot.png" alt="彩虹刷题吉祥物" />
+              彩虹刷题
             </Link>
             <nav className="nav-links">
               <Link href="/moni/2026">模拟卷 A</Link>
@@ -76,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <footer className="footer">
           <div className="wrap footer-inner">
-            <span>© {new Date().getFullYear()} 彩虹题伴</span>
+            <span>© {new Date().getFullYear()} 彩虹刷题</span>
             <Link href="/about">关于本站</Link>
             <Link href="/guide/zhuce">注册营养师报考</Link>
             <Link href="/guide/gongying">公共营养师报考</Link>

@@ -15,7 +15,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "注册营养师报考指南：条件、时间、报名入口",
   dateModified: pageUpdates["/guide/zhuce"],
-  author: { "@type": "Organization", name: "彩虹题伴" },
+  author: { "@type": "Organization", name: "彩虹刷题" },
 };
 
 export default function Page() {

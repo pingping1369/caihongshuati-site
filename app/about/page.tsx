@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
   title: "关于本站",
-  description: "彩虹题伴官网：站点定位、内容方法与联系方式。",
+  description: "彩虹刷题官网：站点定位、内容方法与联系方式。",
 };
 
 export default function AboutPage() {
@@ -12,9 +12,9 @@ export default function AboutPage() {
     <main className="sec wrap article" style={{ margin: "0 auto" }}>
       <div className="card">
         <h1>关于本站</h1>
-        <p className="meta">caihongshuati.com · 彩虹题伴官方网站</p>
+        <p className="meta">caihongshuati.com · 彩虹刷题官方网站</p>
         <p>
-          这里是微信小程序「彩虹题伴」的官网。小程序为注册营养师考试提供历年真题、图解考点与自动排期的刷题计划；本站提供产品介绍、
+          这里是微信小程序「彩虹刷题」的官网。小程序为注册营养师考试提供历年真题、图解考点与自动排期的刷题计划；本站提供产品介绍、
           <Link href="/questions">真题样题体验</Link>与
           <Link href="/guide/zhuce">报考信息整理</Link>。
         </p>

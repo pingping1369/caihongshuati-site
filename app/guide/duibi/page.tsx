@@ -15,7 +15,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "注册营养师和公共营养师的区别：一张表看懂怎么选",
   dateModified: pageUpdates["/guide/duibi"],
-  author: { "@type": "Organization", name: "彩虹题伴" },
+  author: { "@type": "Organization", name: "彩虹刷题" },
 };
 
 export default function Page() {

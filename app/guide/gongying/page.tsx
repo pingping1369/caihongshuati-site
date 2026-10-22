@@ -15,7 +15,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "公共营养师报考指南：等级、条件、费用与防坑",
   dateModified: pageUpdates["/guide/gongying"],
-  author: { "@type": "Organization", name: "彩虹题伴" },
+  author: { "@type": "Organization", name: "彩虹刷题" },
 };
 
 export default function Page() {
