@@ -20,11 +20,10 @@ Next.js 15 App Router，全站 SSG（全部路由静态预渲染），Vercel 部
 ## 目录
 
 ```
-app/            页面（首页/样题/指南/FAQ/关于/moni/2026 模拟卷 A、/moni/2026-b 预测卷 B + sitemap.ts + robots.ts）
-components/     QuestionCard（可交互样题卡）、MockExam（模拟卷 A）、PredictionExamB（预测卷 B）、WxCta（转化区）
+app/            页面（首页/样题/指南/FAQ/关于/moni/2027 模拟卷（/moni/2026、/moni/2026-b 301 跳转至此） + sitemap.ts + robots.ts）
+components/     QuestionCard（可交互样题卡）、MockExam（模拟卷）、WxCta（转化区）
 data/           site-data.json —— 题库规模与样题，由主仓库脚本导出
-                mock-2026.json —— 2026 模拟卷 100 题（自命题，不在小程序题库内；考点按九年真题考频选出）
-                mock-2026-b.json —— 预测卷 B 100 题（独立命题；最近三年加权；不进入小程序题库）
+                mock-2027.json —— 2027 模拟卷 100 题（自命题，不在小程序题库内；考点按 2017-2026 真题考频、衰减 0.7 选出）
 public/img/     吉祥物、食材贴纸、产品截图（均来自主仓库 images/ 与 automation/screenshots/）
 public/llms.txt AI 检索用的站点说明
 ```

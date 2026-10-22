@@ -190,9 +190,7 @@ export default function Home() {
         <p style={{ marginTop: 20 }}>
           <Link href="/questions">再来 6 道，覆盖四大模块 ›</Link>
           <span style={{ margin: "0 12px", color: "var(--faint)" }}>|</span>
-          <Link href="/moni/2026-b">全新独立命题：2026 预测卷 B，答一道看一道解析 ›</Link>
-          <span style={{ margin: "0 12px", color: "var(--faint)" }}>|</span>
-          <Link href="/moni/2026">模拟卷 A ›</Link>
+          <Link href="/moni/2027">2027 模拟卷：100 题，答一道看一道解析 ›</Link>
         </p>
       </section>
 
@@ -208,8 +206,8 @@ export default function Home() {
             <span>数据版取舍 · 一天一步日程表 · 该放弃什么直说</span>
           </Link>
           <Link className="guide-link" href="/guide/xinzheng-redian">
-            <b>2026 新政押题：17 个考点，每个一道题</b>
-            <span>新政当年就进卷的证据 · 17 道原创预测题带解析与依据</span>
+            <b>2027 新政押题：18 个考点，每个一道题</b>
+            <span>新政当年就进卷的证据 · 18 道原创预测题带解析与依据</span>
           </Link>
           <Link className="guide-link" href="/guide/kaodian-shuju">
             <b>考点分布数据统计（2017-2026）</b>

@@ -62,7 +62,7 @@ function fmtMin(ms: number) {
 function yearsNote(years: number[]) {
   if (!years.length) return "";
   const last = Math.max(...years);
-  return `近九年真题考过 ${years.length} 年，最近一次 ${last} 年`;
+  return `2017-2026 真题中考过 ${years.length} 年，最近一次 ${last} 年`;
 }
 
 /* 模拟考：一题一屏、答一题看一题解析、做完出分。进度存 localStorage，刷新可续。 */
@@ -153,7 +153,7 @@ export default function MockExam({
             题量为真实考试（约 200 题、180 分钟）的一半，建议 {data.meta.minutes} 分钟内完成。
           </li>
           <li>
-            <strong>答一题，看一题</strong>：点选项即判对错并展开解析，不能改答案；每题标注考点及近九年真题的考查年份。
+            <strong>答一题，看一题</strong>：点选项即判对错并展开解析，不能改答案；每题标注考点及历年真题的考查年份。
           </li>
           <li>
             <strong>做完出分</strong>：按百分制给出模拟分，并按四大模块拆分正确率，列出做错的考点方便回头补。
@@ -232,7 +232,7 @@ export default function MockExam({
           <div className="card mk-wrong">
             <h3>做错的 {result.wrong.length} 题，按考点归类</h3>
             <p className="mk-note">
-              下面这些考点近九年都反复出现过，考前把它们过一遍最划算。
+              下面这些考点在历年真题中反复出现过，考前把它们过一遍最划算。
             </p>
             {result.weakKps.map(([kp, list]) => (
               <details key={kp}>

@@ -74,8 +74,8 @@ export default function Page() {
         <ul>
           <li>确定复习重点：<Link href="/guide/kaodian-shuju">2017-2026 考点分布与高频考点</Link>。</li>
           <li>决定先刷哪年：<Link href="/guide/zhenti-chongkao">真题重考率与近三年覆盖率</Link>。</li>
-          <li>考前查漏：<Link href="/guide/10tian-chongci">10 天冲刺安排</Link>、<Link href="/guide/xinzheng-redian">2026 新政预测题</Link>。</li>
-          <li>整卷练习：<Link href="/moni/2026">模拟卷 A</Link>、<Link href="/moni/2026-b">预测卷 B</Link>（均为自命题，不是官方试卷）。</li>
+          <li>考前查漏：<Link href="/guide/10tian-chongci">10 天冲刺安排</Link>、<Link href="/guide/xinzheng-redian">2027 新政预测题</Link>。</li>
+          <li>整卷练习：<Link href="/moni/2027">2027 模拟卷</Link>（自命题，不是官方试卷）。</li>
         </ul>
 
         <h2>把方法变成日常</h2>

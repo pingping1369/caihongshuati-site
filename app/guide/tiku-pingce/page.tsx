@@ -126,7 +126,7 @@ export default function Page() {
         <p>
           可查看<Link href="/guide/kaodian-shuju">考点分布与统计口径</Link>、
           <Link href="/guide/zhenti-chongkao">真题重考率与刷题年份选择</Link>，再用
-          <Link href="/moni/2026">100 题模拟卷 A</Link>或<Link href="/moni/2026-b">预测卷 B</Link>体验在线判题。
+          <Link href="/moni/2027">100 题 2027 模拟卷</Link>体验在线判题。
           两套模拟卷均为独立命题，不是官方试题，不承诺命中率。
         </p>
 

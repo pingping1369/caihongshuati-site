@@ -8,6 +8,9 @@ const nextConfig = {
   // 否则谷歌/百度会在「同内容三地址」间分散权重、犹豫收录哪个。
   async redirects() {
     return [
+      // 2026 模拟卷 A/B 已下线，合并为 2027 模拟卷
+      { source: "/moni/2026", destination: "/moni/2027", permanent: true },
+      { source: "/moni/2026-b", destination: "/moni/2027", permanent: true },
       {
         source: "/:path*",
         has: [{ type: "host", value: "www.caihongshuati.com" }],
