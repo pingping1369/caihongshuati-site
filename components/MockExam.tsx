@@ -16,6 +16,7 @@ export interface MockQ {
   ans: number;
   why: string;
   diff: "easy" | "medium" | "hard";
+  xz?: boolean;
 }
 
 export interface MockData {
@@ -335,7 +336,7 @@ export default function MockExam({
             <div className="mk-kp">
               <span className="mk-kp-t">考点：{q.kp}</span>
               <span className="mk-kp-y">
-                {q.chapter} · {yearsNote(q.years)}
+                {q.chapter} · {q.xz ? "新政题（2025-2026 年新标准、新指南）" : yearsNote(q.years)}
               </span>
             </div>
           </div>
