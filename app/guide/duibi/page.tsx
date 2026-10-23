@@ -67,7 +67,7 @@ export default function Page() {
               </tr>
               <tr>
                 <td>一年几次</td>
-                <td>1–2 次</td>
+                <td>1 次</td>
                 <td>4 次（3、6、9、12 月）</td>
               </tr>
               <tr>
