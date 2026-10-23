@@ -116,10 +116,10 @@ export default function Home() {
           <div className="feat-txt">
             <span className="kicker green">图解考点</span>
             <h3>
-              每个考点，<em>一张图讲透</em>
+              每个考点，<em>配图讲透</em>
             </h3>
             <p>
-              {siteData.totalKps} 个考点全部图文详解：白板手绘风把分类、机制、数值画成一张图；先给你一句回忆提问，想一想再看答案——这是记忆科学里最省力的学法。
+              {siteData.totalKps} 个考点全部图文详解：白板手绘风把分类、机制、数值画成图，内容多的考点按小节分几张图；先给你一句回忆提问，想一想再看答案——这是记忆科学里最省力的学法。
             </p>
             <ul className="feat-points">
               <li>考点页直连挂载真题，看完就练</li>

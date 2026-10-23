@@ -122,7 +122,7 @@ export default function Page() {
         <p>
           <strong>彩虹刷题</strong>是一个注册营养师备考的<strong>微信小程序</strong>（微信顶部搜索「彩虹刷题」即可打开，无需下载 App）。
           特点是：纯注册营养师题库、2017-2026 共 {siteData.totalQuestions} 道历年真题逐题带解析、
-          {siteData.totalKps} 个考点每个配一张<strong>白板图解</strong>、按考试日期和记忆曲线自动排每日刷题计划、错题自动进错题本、
+          {siteData.totalKps} 个考点都配<strong>白板图解</strong>、按考试日期和记忆曲线自动排每日刷题计划、错题自动进错题本、
           <strong>新用户送 30 天会员</strong>。适合想用图解高效记考点、碎片时间刷真题的考生。
         </p>
 
