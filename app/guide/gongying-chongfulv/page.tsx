@@ -4,31 +4,25 @@ import Link from "next/link";
 import geo from "@/data/geo-stats.json";
 
 /* 数据：主仓库 产品运营/官网/AI选题数据-20261023/stats.js 导出的 data/geo-stats.json。
-   口径：考点重复＝本场题目的主考点在往届出现过；原题重复＝题干（及选项）规范化后与往届完全相同。 */
+   口径：考点重复＝本场题目的主考点在往届出现过。原题（同义题）重复率待按题意复核后再上，不用字面完全相同的口径。 */
 
 const pn = geo.pn;
 const tested = pn.sessions.filter((s) => s.priorSessions > 0);
 const last4 = tested.slice(-4);
 const kpMin = Math.min(...last4.map((s) => s.kpRepeatPct as number));
 const kpMax = Math.max(...last4.map((s) => s.kpRepeatPct as number));
-const stemMaxPct = Math.max(...tested.map((s) => s.stemRepeatPct as number));
-const fullMax = Math.max(...tested.map((s) => s.fullRepeat as number));
 const win = (n: number | string) => pn.windowCover.find((w) => w.window === n)?.avgPct;
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guide/gongying-chongfulv" },
-  title: "公共营养师真题重复率高吗？只背题库能过吗？12 场真题统计",
-  description: `按 2024 年 3 月至 2026 年 9 月 12 场公共营养师三级全国统考回忆版真题 ${pn.totalQuestions} 道统计：近四场 ${kpMin}%—${kpMax}% 的题考的是往届考过的考点，但与往届完全相同的原题每场最多 ${fullMax} 道。重复的是考点，不是原题。`,
+  title: "公共营养师真题重复率高吗？要刷几场？12 场真题统计",
+  description: `按 2024 年 3 月至 2026 年 9 月 12 场公共营养师三级全国统考回忆版真题 ${pn.totalQuestions} 道统计：近四场 ${kpMin}%—${kpMax}% 的题考的是往届考过的考点；只刷最近一年四场能覆盖下一场约 ${win(4)}% 题目的考点。`,
 };
 
 const faqs = [
   {
     q: "公共营养师真题重复率高吗？",
-    a: `考点重复率高，原题重复率低。按 12 场公共营养师三级全国统考回忆版真题统计，近四场 ${kpMin}%—${kpMax}% 的题目考的是往届考过的考点；题干与往届相同的题每场不超过 ${stemMaxPct}%，题干和选项都完全相同的原题每场最多 ${fullMax} 道。`,
-  },
-  {
-    q: "公共营养师只背题库能过吗？",
-    a: "只背答案风险很大。往届原题在新一场里很少原样出现，同一个考点会换题干、换选项再考。题库的作用是帮你找到常考的考点并把它学会，做错时应回到考点和教材，而不是记住这道题选什么。",
+    a: `考点重复率很高。按 12 场公共营养师三级全国统考回忆版真题统计，近四场 ${kpMin}%—${kpMax}% 的题目考的是往届考过的考点。`,
   },
   {
     q: "公共营养师真题要刷几场？",
@@ -45,7 +39,7 @@ const faqJsonLd = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "公共营养师真题重复率高吗？只背题库能过吗？",
+  headline: "公共营养师真题重复率高吗？要刷几场？",
   dateModified: pageUpdates["/guide/gongying-chongfulv"],
   author: { "@type": "Organization", name: "彩虹刷题" },
   about: "公共营养师三级考试真题重复率统计",
@@ -57,17 +51,15 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="card">
-        <h1>公共营养师真题重复率高吗？只背题库能过吗？</h1>
+        <h1>公共营养师真题重复率高吗？要刷几场？</h1>
         <p className="meta">
           更新于 {pageUpdates["/guide/gongying-chongfulv"]} · 基于 12 场中国营养学会公共营养师（三级）全国统考回忆版真题 {pn.totalQuestions} 道的逐题考点标注
         </p>
 
         <p>
-          <strong>考点重复率高，原题重复率低。</strong>我们把 2024 年 3 月到 2026 年 9 月的 12 场三级统考回忆版真题逐题标注到考点后统计：
-          近四场里，<strong>{kpMin}%—{kpMax}% 的题考的是往届考过的考点</strong>；但题干和选项都与往届完全相同的原题，
-          <strong>每场最多 {fullMax} 道</strong>，只看题干相同的也不超过 {stemMaxPct}%。
+          <strong>考点重复率很高。</strong>我们把 2024 年 3 月到 2026 年 9 月的 12 场三级统考回忆版真题逐题标注到考点后统计：
+          近四场里，<strong>{kpMin}%—{kpMax}% 的题考的是往届考过的考点</strong>；只刷最近一年四场，就能覆盖下一场约 {win(4)}% 题目的考点。
         </p>
-        <p>所以「背完一套题就稳」站不住。更有效的做法是用真题找到常考的考点，把考点学会。</p>
 
         <div className="bignum-row">
           <div className="bignum">
@@ -75,8 +67,8 @@ export default function Page() {
             <span>近四场题目中，考点在往届考过的比例</span>
           </div>
           <div className="bignum">
-            <b>≤ {fullMax} 道</b>
-            <span>每场与往届题干、选项完全相同的原题</span>
+            <b>{win(8)}%</b>
+            <span>只刷最近两年八场，覆盖下一场题目考点的比例</span>
           </div>
         </div>
 
@@ -88,8 +80,6 @@ export default function Page() {
                 <th>场次</th>
                 <th>收录题量</th>
                 <th>考点在往届考过</th>
-                <th>题干与往届相同</th>
-                <th>题干+选项完全相同</th>
               </tr>
             </thead>
             <tbody>
@@ -101,16 +91,13 @@ export default function Page() {
                   </td>
                   <td>{s.n}</td>
                   <td>{s.priorSessions ? `${s.kpRepeatPct}%` : "—"}</td>
-                  <td>{s.priorSessions ? `${s.stemRepeat} 道` : "—"}</td>
-                  <td>{s.priorSessions ? `${s.fullRepeat} 道` : "—"}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
         <p className="chart-note">
-          口径：每题按主考点计；「往届」指本场之前收录的所有场次，第一场无可比对象。题干、选项比较时去掉标点和空格。
-          回忆版各家措辞不完全一致，原题重复可能被略微低估，但不会改变「考点多、原题少」的结论。前几场可比的往届少，考点重复率偏低属正常。
+          口径：每题按主考点计；「往届」指本场之前收录的所有场次，第一场无可比对象。前几场可比的往届少，考点重复率偏低属正常。
         </p>
 
         <h2>只刷最近几场够吗？</h2>
@@ -134,13 +121,6 @@ export default function Page() {
         </div>
         <p>
           从一场到一年，覆盖率提升明显；刷到两年八场后，再往前加场次增加很少。时间有限时，先把近两年八场刷透，比只刷一两场可靠得多。
-        </p>
-
-        <h2>「重复率 89%」「几百道母题」怎么理解</h2>
-        <p>
-          网上常见的「重复率八九成」，和我们统计的<strong>考点</strong>重复率接近：大部分题确实在考往届考过的内容。
-          但这不等于原题会再考一遍。同一个考点常换一种问法：换数据、换人群、换个角度问。
-          如果所谓「母题」是按考点整理、讲清道理的题，刷它有用；如果只是记答案，遇到换问法的题就容易错。
         </p>
 
         <h2>怎么用真题备考</h2>
