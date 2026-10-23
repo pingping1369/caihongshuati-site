@@ -61,7 +61,7 @@ const orgJsonLd = {
     },
     {
       "@type": "SoftwareApplication",
-      name: "彩虹刷题",
+      name: "彩虹刷题-图解注册营养题库",
       applicationCategory: "EducationalApplication",
       operatingSystem: "微信小程序",
       description:
