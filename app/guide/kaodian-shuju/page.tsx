@@ -5,7 +5,7 @@ import WxCta from "@/components/WxCta";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guide/kaodian-shuju" },
-  title: "注册营养师考点分布数据统计（2017-2026）：模块占比与高频考点",
+  title: "注册营养师考试重点有哪些？2017-2026 真题考点分布与高频考点",
   description:
     "基于 1850 道回忆版真题 × 864 个考点的逐题标注统计：四大模块题量占比、章节热度 TOP10、高频考点排行。54 个被 6 个以上年份考过的核心考点覆盖了约 26% 的题目。",
 };
@@ -128,11 +128,15 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="card">
-        <h1>注册营养师考点分布数据（2017-2026）：题都出在哪？</h1>
+        <h1>注册营养师考试重点有哪些？十年真题考点分布</h1>
         <p className="meta">
           更新于 {pageUpdates["/guide/kaodian-shuju"]} · 基于彩虹刷题题库 1850 道回忆版真题 × 864 个考点的逐题标注统计
         </p>
 
+        <p>
+          <strong>直接说结论：</strong>个体和群体营养管理（41.0%）、食物与营养（34.5%）两个模块占了四分之三的题；
+          54 个被 6 个及以上年份考过的核心考点，覆盖了约 26% 的题目。下面是完整统计。
+        </p>
         <p>
           备考最常见的迷茫是「书这么厚，力气往哪使」。网上的经验贴大多凭感觉；这一页用数据回答——
           我们把 <strong>2017-2026 十年、共 1850 道回忆版真题</strong>逐题人工标注到 864

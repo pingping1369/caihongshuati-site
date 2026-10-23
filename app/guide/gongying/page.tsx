@@ -99,6 +99,13 @@ export default function Page() {
           <li>ACI「国际注册营养师」等洋证书在国内不被认可，别花冤枉钱。</li>
         </ul>
 
+        <h2>中国营养学会公共营养师三级考什么</h2>
+        <p>
+          除人社序列外，中国营养学会也组织公共营养师（三级）职业能力评价全国统考。它的题型分值、内容分布和高频考点，见
+          <Link href="/guide/gongying-kaoshenme">三级考什么</Link>、<Link href="/guide/gongying-gaopin">三级高频考点</Link>与
+          <Link href="/guide/gongying-chongfulv">真题重复率统计</Link>。
+        </p>
+
         <h2>下一步</h2>
         <p>
           还在纠结考哪个证？看<Link href="/guide/duibi">注册营养师 vs 公共营养师对比</Link>。 决定报考了就从真题开始——

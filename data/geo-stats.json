@@ -1,0 +1,1549 @@
+{
+  "generated": "2026-10-23",
+  "pn": {
+    "totalQuestions": 1304,
+    "totalKps": 435,
+    "kpsTested": 312,
+    "sessions": [
+      {
+        "session": "2403",
+        "label": "2024年3月",
+        "n": 105,
+        "theory": {
+          "n": 80,
+          "single": 65,
+          "multi": 15
+        },
+        "skill": {
+          "n": 25,
+          "single": 6,
+          "multi": 19
+        },
+        "priorSessions": 0,
+        "kpRepeatPct": null,
+        "stemRepeat": null,
+        "stemRepeatPct": null,
+        "fullRepeat": null
+      },
+      {
+        "session": "2406",
+        "label": "2024年6月",
+        "n": 110,
+        "theory": {
+          "n": 85,
+          "single": 69,
+          "multi": 16
+        },
+        "skill": {
+          "n": 25,
+          "single": 11,
+          "multi": 14
+        },
+        "priorSessions": 1,
+        "kpRepeatPct": 37.3,
+        "stemRepeat": 1,
+        "stemRepeatPct": 0.9,
+        "fullRepeat": 0
+      },
+      {
+        "session": "2409",
+        "label": "2024年9月",
+        "n": 110,
+        "theory": {
+          "n": 85,
+          "single": 70,
+          "multi": 15
+        },
+        "skill": {
+          "n": 25,
+          "single": 10,
+          "multi": 15
+        },
+        "priorSessions": 2,
+        "kpRepeatPct": 69.1,
+        "stemRepeat": 0,
+        "stemRepeatPct": 0,
+        "fullRepeat": 0
+      },
+      {
+        "session": "2412",
+        "label": "2024年12月",
+        "n": 100,
+        "theory": {
+          "n": 80,
+          "single": 60,
+          "multi": 20
+        },
+        "skill": {
+          "n": 20,
+          "single": 8,
+          "multi": 12
+        },
+        "priorSessions": 3,
+        "kpRepeatPct": 78,
+        "stemRepeat": 6,
+        "stemRepeatPct": 6,
+        "fullRepeat": 1
+      },
+      {
+        "session": "2503",
+        "label": "2025年3月",
+        "n": 113,
+        "theory": {
+          "n": 85,
+          "single": 69,
+          "multi": 16
+        },
+        "skill": {
+          "n": 28,
+          "single": 12,
+          "multi": 16
+        },
+        "priorSessions": 4,
+        "kpRepeatPct": 77.9,
+        "stemRepeat": 7,
+        "stemRepeatPct": 6.2,
+        "fullRepeat": 3
+      },
+      {
+        "session": "2506",
+        "label": "2025年6月",
+        "n": 110,
+        "theory": {
+          "n": 85,
+          "single": 70,
+          "multi": 15
+        },
+        "skill": {
+          "n": 25,
+          "single": 11,
+          "multi": 14
+        },
+        "priorSessions": 5,
+        "kpRepeatPct": 81.8,
+        "stemRepeat": 11,
+        "stemRepeatPct": 10,
+        "fullRepeat": 6
+      },
+      {
+        "session": "2509",
+        "label": "2025年9月",
+        "n": 109,
+        "theory": {
+          "n": 84,
+          "single": 70,
+          "multi": 14
+        },
+        "skill": {
+          "n": 25,
+          "single": 13,
+          "multi": 12
+        },
+        "priorSessions": 6,
+        "kpRepeatPct": 82.6,
+        "stemRepeat": 6,
+        "stemRepeatPct": 5.5,
+        "fullRepeat": 5
+      },
+      {
+        "session": "2512",
+        "label": "2025年12月",
+        "n": 110,
+        "theory": {
+          "n": 85,
+          "single": 71,
+          "multi": 14
+        },
+        "skill": {
+          "n": 25,
+          "single": 15,
+          "multi": 10
+        },
+        "priorSessions": 7,
+        "kpRepeatPct": 80.9,
+        "stemRepeat": 9,
+        "stemRepeatPct": 8.2,
+        "fullRepeat": 7
+      },
+      {
+        "session": "2603",
+        "label": "2026年3月",
+        "n": 108,
+        "theory": {
+          "n": 85,
+          "single": 70,
+          "multi": 15
+        },
+        "skill": {
+          "n": 23,
+          "single": 10,
+          "multi": 13
+        },
+        "priorSessions": 8,
+        "kpRepeatPct": 89.8,
+        "stemRepeat": 8,
+        "stemRepeatPct": 7.4,
+        "fullRepeat": 4
+      },
+      {
+        "session": "2606",
+        "label": "2026年6月",
+        "n": 110,
+        "theory": {
+          "n": 85,
+          "single": 70,
+          "multi": 15
+        },
+        "skill": {
+          "n": 25,
+          "single": 14,
+          "multi": 11
+        },
+        "priorSessions": 9,
+        "kpRepeatPct": 85.5,
+        "stemRepeat": 3,
+        "stemRepeatPct": 2.7,
+        "fullRepeat": 2
+      },
+      {
+        "session": "2608",
+        "label": "2026年8月（补考）",
+        "n": 109,
+        "theory": {
+          "n": 84,
+          "single": 69,
+          "multi": 15
+        },
+        "skill": {
+          "n": 25,
+          "single": 14,
+          "multi": 11
+        },
+        "priorSessions": 10,
+        "kpRepeatPct": 89,
+        "stemRepeat": 1,
+        "stemRepeatPct": 0.9,
+        "fullRepeat": 0
+      },
+      {
+        "session": "2609",
+        "label": "2026年9月",
+        "n": 110,
+        "theory": {
+          "n": 85,
+          "single": 70,
+          "multi": 15
+        },
+        "skill": {
+          "n": 25,
+          "single": 15,
+          "multi": 10
+        },
+        "priorSessions": 11,
+        "kpRepeatPct": 87.3,
+        "stemRepeat": 2,
+        "stemRepeatPct": 1.8,
+        "fullRepeat": 0
+      }
+    ],
+    "windowCover": [
+      {
+        "window": 1,
+        "avgPct": 40.5,
+        "tests": 4
+      },
+      {
+        "window": 2,
+        "avgPct": 59.3,
+        "tests": 4
+      },
+      {
+        "window": 4,
+        "avgPct": 76.9,
+        "tests": 4
+      },
+      {
+        "window": 8,
+        "avgPct": 86.3,
+        "tests": 4
+      },
+      {
+        "window": "all",
+        "avgPct": 87.9,
+        "tests": 4
+      }
+    ],
+    "kpSessionHistogram": {
+      "1": 91,
+      "2": 59,
+      "3": 48,
+      "4": 29,
+      "5": 24,
+      "6": 26,
+      "7": 16,
+      "8": 9,
+      "9": 4,
+      "10": 4,
+      "12": 2
+    },
+    "hiCover": [
+      {
+        "minSessions": 6,
+        "kps": 61,
+        "questionPct": 47.4
+      },
+      {
+        "minSessions": 8,
+        "kps": 19,
+        "questionPct": 19.9
+      },
+      {
+        "minSessions": 10,
+        "kps": 6,
+        "questionPct": 8.4
+      }
+    ],
+    "topKps": [
+      {
+        "id": "kp_gys_0422",
+        "t": "膳食结构分析与评价",
+        "book": "三级",
+        "chapter": "膳食调查结果的计算与评价",
+        "sessions": 12,
+        "questions": 25
+      },
+      {
+        "id": "kp_gys_0416",
+        "t": "24小时回顾法",
+        "book": "三级",
+        "chapter": "食物摄入量调查",
+        "sessions": 12,
+        "questions": 24
+      },
+      {
+        "id": "kp_gys_0443",
+        "t": "7岁以下儿童生长评价",
+        "book": "三级",
+        "chapter": "营养不良的症状和体征判别",
+        "sessions": 10,
+        "questions": 19
+      },
+      {
+        "id": "kp_gys_0358",
+        "t": "食品添加剂功能类别",
+        "book": "基础知识",
+        "chapter": "常见的食品保藏和加工技术",
+        "sessions": 10,
+        "questions": 17
+      },
+      {
+        "id": "kp_gys_0328",
+        "t": "社区营养管理概述",
+        "book": "基础知识",
+        "chapter": "社区营养管理",
+        "sessions": 10,
+        "questions": 14
+      },
+      {
+        "id": "kp_gys_0419",
+        "t": "记账法",
+        "book": "三级",
+        "chapter": "食物摄入量调查",
+        "sessions": 10,
+        "questions": 10
+      },
+      {
+        "id": "kp_gys_0571",
+        "t": "能量的营养素来源分布计算",
+        "book": "三级",
+        "chapter": "膳食调查结果的计算与评价",
+        "sessions": 9,
+        "questions": 13
+      },
+      {
+        "id": "kp_gys_0322",
+        "t": "营养教育的实施步骤",
+        "book": "基础知识",
+        "chapter": "营养教育",
+        "sessions": 9,
+        "questions": 12
+      },
+      {
+        "id": "kp_gys_0538",
+        "t": "社区健康调查资料的性质和分类",
+        "book": "三级",
+        "chapter": "营养与健康信息的收集",
+        "sessions": 9,
+        "questions": 11
+      },
+      {
+        "id": "kp_gys_0008",
+        "t": "公共营养师职业守则",
+        "book": "基础知识",
+        "chapter": "公共营养师职业守则",
+        "sessions": 9,
+        "questions": 10
+      },
+      {
+        "id": "kp_gys_0420",
+        "t": "称重记账法",
+        "book": "三级",
+        "chapter": "食物摄入量调查",
+        "sessions": 8,
+        "questions": 16
+      },
+      {
+        "id": "kp_gys_0203",
+        "t": "孕期营养需要与营养素参考摄入量",
+        "book": "基础知识",
+        "chapter": "孕妇营养",
+        "sessions": 8,
+        "questions": 14
+      },
+      {
+        "id": "kp_gys_0285",
+        "t": "学龄前儿童膳食指南",
+        "book": "基础知识",
+        "chapter": "学龄前儿童营养",
+        "sessions": 8,
+        "questions": 13
+      },
+      {
+        "id": "kp_gys_0483",
+        "t": "个体食谱的综合分析和评价",
+        "book": "三级",
+        "chapter": "食谱营养评价和调整",
+        "sessions": 8,
+        "questions": 12
+      },
+      {
+        "id": "kp_gys_0434",
+        "t": "皮褶厚度测量",
+        "book": "三级",
+        "chapter": "人体体格测量",
+        "sessions": 8,
+        "questions": 12
+      },
+      {
+        "id": "kp_gys_0324",
+        "t": "大众传播技巧",
+        "book": "基础知识",
+        "chapter": "营养教育",
+        "sessions": 8,
+        "questions": 11
+      },
+      {
+        "id": "kp_gys_0098",
+        "t": "维生素D",
+        "book": "基础知识",
+        "chapter": "维生素",
+        "sessions": 8,
+        "questions": 10
+      },
+      {
+        "id": "kp_gys_0302",
+        "t": "老年人生理特点",
+        "book": "基础知识",
+        "chapter": "不同人群的生理特点",
+        "sessions": 8,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_0426",
+        "t": "膳食调查数据库",
+        "book": "三级",
+        "chapter": "膳食调查结果的计算与评价",
+        "sessions": 8,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_0452",
+        "t": "人际传播沟通技巧",
+        "book": "三级",
+        "chapter": "交流和咨询",
+        "sessions": 7,
+        "questions": 16
+      },
+      {
+        "id": "kp_gys_0432",
+        "t": "婴幼儿体格测量",
+        "book": "三级",
+        "chapter": "人体体格测量",
+        "sessions": 7,
+        "questions": 16
+      },
+      {
+        "id": "kp_gys_0217",
+        "t": "妊娠期体重监测与评价",
+        "book": "基础知识",
+        "chapter": "孕妇营养",
+        "sessions": 7,
+        "questions": 12
+      },
+      {
+        "id": "kp_gys_0470",
+        "t": "科普文章的基本要求和写作原则",
+        "book": "三级",
+        "chapter": "营养教育",
+        "sessions": 7,
+        "questions": 11
+      },
+      {
+        "id": "kp_gys_0092",
+        "t": "维生素A",
+        "book": "基础知识",
+        "chapter": "维生素",
+        "sessions": 7,
+        "questions": 10
+      },
+      {
+        "id": "kp_gys_0481",
+        "t": "食谱餐次比例和修改",
+        "book": "三级",
+        "chapter": "食谱营养评价和调整",
+        "sessions": 7,
+        "questions": 10
+      },
+      {
+        "id": "kp_gys_0045",
+        "t": "能量消耗",
+        "book": "基础知识",
+        "chapter": "能量",
+        "sessions": 7,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0562",
+        "t": "身体活动方案制定",
+        "book": "三级",
+        "chapter": "营养干预方案设计和实施",
+        "sessions": 7,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0235",
+        "t": "婴儿营养需要及参考摄入量",
+        "book": "基础知识",
+        "chapter": "婴儿营养",
+        "sessions": 7,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0516",
+        "t": "食物蛋白质的营养评价",
+        "book": "基础知识",
+        "chapter": "蛋白质",
+        "sessions": 7,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0469",
+        "t": "营养讲座的组织",
+        "book": "三级",
+        "chapter": "营养教育",
+        "sessions": 7,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0001",
+        "t": "职业道德的定义",
+        "book": "基础知识",
+        "chapter": "职业道德基本知识",
+        "sessions": 7,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_0445",
+        "t": "营养性贫血的判断",
+        "book": "三级",
+        "chapter": "营养不良的症状和体征判别",
+        "sessions": 7,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_va_prevention",
+        "t": "维生素A缺乏病",
+        "book": "基础知识",
+        "chapter": "营养缺乏病",
+        "sessions": 7,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_0183",
+        "t": "中国居民的膳食结构",
+        "book": "基础知识",
+        "chapter": "膳食结构",
+        "sessions": 7,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0417",
+        "t": "24小时回顾和膳食史结合方法",
+        "book": "三级",
+        "chapter": "食物摄入量调查",
+        "sessions": 7,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0472",
+        "t": "学龄前儿童膳食能量和营养目标设计",
+        "book": "三级",
+        "chapter": "营养和食物需要目标设计",
+        "sessions": 6,
+        "questions": 12
+      },
+      {
+        "id": "kp_gys_0454",
+        "t": "烹饪营养的指导",
+        "book": "三级",
+        "chapter": "交流和咨询",
+        "sessions": 6,
+        "questions": 12
+      },
+      {
+        "id": "kp_gys_0046",
+        "t": "能量需要量及食物来源",
+        "book": "基础知识",
+        "chapter": "能量",
+        "sessions": 6,
+        "questions": 10
+      },
+      {
+        "id": "kp_gys_0154",
+        "t": "乳类的营养成分",
+        "book": "基础知识",
+        "chapter": "动物性食物的营养价值",
+        "sessions": 6,
+        "questions": 10
+      },
+      {
+        "id": "kp_gys_0220",
+        "t": "乳母营养需要及参考摄入量",
+        "book": "基础知识",
+        "chapter": "乳母营养",
+        "sessions": 6,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0114",
+        "t": "维生素B1",
+        "book": "基础知识",
+        "chapter": "维生素",
+        "sessions": 6,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0195",
+        "t": "中国居民平衡膳食宝塔",
+        "book": "基础知识",
+        "chapter": "中国居民膳食指南",
+        "sessions": 6,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0269",
+        "t": "7～24月龄婴幼儿喂养指南",
+        "book": "基础知识",
+        "chapter": "幼儿营养",
+        "sessions": 6,
+        "questions": 9
+      },
+      {
+        "id": "kp_gys_0421",
+        "t": "膳食调查方法的选择",
+        "book": "三级",
+        "chapter": "膳食调查结果的计算与评价",
+        "sessions": 6,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_0321",
+        "t": "营养教育概述",
+        "book": "基础知识",
+        "chapter": "营养教育",
+        "sessions": 6,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_0255",
+        "t": "幼儿生理特点",
+        "book": "基础知识",
+        "chapter": "不同人群的生理特点",
+        "sessions": 6,
+        "questions": 8
+      },
+      {
+        "id": "kp_gys_0341",
+        "t": "食品腐败变质",
+        "book": "基础知识",
+        "chapter": "食品污染及其预防",
+        "sessions": 6,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0145",
+        "t": "谷类的营养价值",
+        "book": "基础知识",
+        "chapter": "植物性食物的营养价值",
+        "sessions": 6,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0334",
+        "t": "高血压的膳食营养防治",
+        "book": "基础知识",
+        "chapter": "膳食营养与慢性疾病预防",
+        "sessions": 6,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0442",
+        "t": "蛋白质-能量营养不良判断",
+        "book": "三级",
+        "chapter": "营养不良的症状和体征判别",
+        "sessions": 6,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0331",
+        "t": "营养改善项目",
+        "book": "基础知识",
+        "chapter": "社区营养管理",
+        "sessions": 6,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0049",
+        "t": "氨基酸模式及限制氨基酸",
+        "book": "基础知识",
+        "chapter": "蛋白质",
+        "sessions": 6,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0424",
+        "t": "膳食营养素计算与评价",
+        "book": "三级",
+        "chapter": "膳食调查结果的计算与评价",
+        "sessions": 6,
+        "questions": 7
+      },
+      {
+        "id": "kp_gys_0048",
+        "t": "氨基酸的分类",
+        "book": "基础知识",
+        "chapter": "蛋白质",
+        "sessions": 6,
+        "questions": 6
+      },
+      {
+        "id": "kp_gys_0329",
+        "t": "社区动员",
+        "book": "基础知识",
+        "chapter": "社区营养管理",
+        "sessions": 6,
+        "questions": 6
+      },
+      {
+        "id": "kp_gys_0060",
+        "t": "必需脂肪酸",
+        "book": "基础知识",
+        "chapter": "脂类",
+        "sessions": 6,
+        "questions": 6
+      },
+      {
+        "id": "kp_gys_0346",
+        "t": "黄曲霉毒素污染",
+        "book": "基础知识",
+        "chapter": "食品污染及其预防",
+        "sessions": 6,
+        "questions": 6
+      },
+      {
+        "id": "kp_gys_0080",
+        "t": "锌的生理功能",
+        "book": "基础知识",
+        "chapter": "矿物质",
+        "sessions": 6,
+        "questions": 6
+      },
+      {
+        "id": "kp_gys_0067",
+        "t": "钙的膳食参考摄入量及食物来源",
+        "book": "基础知识",
+        "chapter": "矿物质",
+        "sessions": 6,
+        "questions": 6
+      },
+      {
+        "id": "kp_gys_0190",
+        "t": "少盐少油，控糖限酒",
+        "book": "基础知识",
+        "chapter": "中国居民膳食指南",
+        "sessions": 6,
+        "questions": 6
+      },
+      {
+        "id": "kp_gys_0423",
+        "t": "膳食能量摄入量计算与评价",
+        "book": "三级",
+        "chapter": "膳食调查结果的计算与评价",
+        "sessions": 6,
+        "questions": 6
+      }
+    ],
+    "chapters": {
+      "theory": [
+        {
+          "chapter": "《公共营养师（基础知识）》 · 维生素",
+          "pct": 5.3
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食物摄入量调查",
+          "pct": 4.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 膳食调查结果的计算与评价",
+          "pct": 4.1
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养不良的症状和体征判别",
+          "pct": 3.9
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 交流和咨询",
+          "pct": 3.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 蛋白质",
+          "pct": 3.6
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 中国居民膳食指南",
+          "pct": 3.4
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 营养教育",
+          "pct": 3.4
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 职业道德基本知识",
+          "pct": 3.2
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 人体体格测量",
+          "pct": 3.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 营养缺乏病",
+          "pct": 3.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 不同人群的生理特点",
+          "pct": 2.9
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 社区营养管理",
+          "pct": 2.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 常见的食品保藏和加工技术",
+          "pct": 2.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 人体解剖生理基础",
+          "pct": 2.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 矿物质",
+          "pct": 2.5
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养教育",
+          "pct": 2.4
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 动物性食物的营养价值",
+          "pct": 2.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 脂类",
+          "pct": 2.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 能量",
+          "pct": 2.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 食品污染及其预防",
+          "pct": 2
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养与健康信息的收集",
+          "pct": 1.9
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 孕妇营养",
+          "pct": 1.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 学龄前儿童营养",
+          "pct": 1.8
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食谱营养评价和调整",
+          "pct": 1.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 植物性食物的营养价值",
+          "pct": 1.6
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 婴儿营养",
+          "pct": 1.5
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食品营养价值分析",
+          "pct": 1.4
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 膳食营养与慢性疾病预防",
+          "pct": 1.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 学龄儿童与青少年营养",
+          "pct": 1.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 食物中毒及其预防和管理",
+          "pct": 1.2
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 膳食结构",
+          "pct": 1.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 营养学概论",
+          "pct": 1.1
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养与健康档案的建立和管理",
+          "pct": 1.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 食物消化吸收",
+          "pct": 1
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食谱编制",
+          "pct": 1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 老年人营养",
+          "pct": 1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 食品安全法",
+          "pct": 0.9
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 公共营养师职业守则",
+          "pct": 0.9
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 预包装食品标签标准体系",
+          "pct": 0.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 碳水化合物",
+          "pct": 0.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 幼儿营养",
+          "pct": 0.8
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 乳母营养",
+          "pct": 0.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 膳食营养素参考摄入量的应用",
+          "pct": 0.7
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养干预方案设计和实施",
+          "pct": 0.6
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食品营养资料编辑",
+          "pct": 0.6
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 营养强化和保健食品",
+          "pct": 0.6
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养和食物需要目标设计",
+          "pct": 0.5
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 各类食品的卫生要求",
+          "pct": 0.5
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食品营养标签制作",
+          "pct": 0.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 常见生物样品的收集和保存",
+          "pct": 0.4
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 公共营养师职业概述",
+          "pct": 0.4
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 油脂和调味品的营养价值",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 膳食营养管理概论",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 食物与营养发展纲要",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 膳食纤维",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 国民营养计划",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 健康中国行动",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 水",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 其他膳食成分",
+          "pct": 0.2
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 营养健康宣传活动",
+          "pct": 0.2
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 餐饮营养标识",
+          "pct": 0.2
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 饮料",
+          "pct": 0.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 公共营养概论",
+          "pct": 0.1
+        }
+      ],
+      "skill": [
+        {
+          "chapter": "《公共营养师（三级）》 · 膳食调查结果的计算与评价",
+          "pct": 13.2
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养干预方案设计和实施",
+          "pct": 8.8
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食物摄入量调查",
+          "pct": 7.8
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 交流和咨询",
+          "pct": 7.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养不良的症状和体征判别",
+          "pct": 7.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 孕妇营养",
+          "pct": 5.7
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 人体体格测量",
+          "pct": 5.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养与健康信息的收集",
+          "pct": 4.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 膳食营养与慢性疾病预防",
+          "pct": 4.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 乳母营养",
+          "pct": 4.1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 幼儿营养",
+          "pct": 3.7
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养与健康档案的建立和管理",
+          "pct": 3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 老年人营养",
+          "pct": 2.7
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养和食物需要目标设计",
+          "pct": 2.7
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食品营养标签制作",
+          "pct": 2.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食谱编制",
+          "pct": 2.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食谱营养评价和调整",
+          "pct": 2.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 营养教育",
+          "pct": 2
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 婴儿营养",
+          "pct": 1.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 营养教育",
+          "pct": 1.4
+        },
+        {
+          "chapter": "《公共营养师（三级）》 · 食品营养价值分析",
+          "pct": 1.4
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 不同人群的生理特点",
+          "pct": 1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 学龄前儿童营养",
+          "pct": 1
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 学龄儿童与青少年营养",
+          "pct": 0.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 动物性食物的营养价值",
+          "pct": 0.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 维生素",
+          "pct": 0.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 营养缺乏病",
+          "pct": 0.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 预包装食品标签标准体系",
+          "pct": 0.7
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 国民营养计划",
+          "pct": 0.3
+        },
+        {
+          "chapter": "《公共营养师（基础知识）》 · 常见的食品保藏和加工技术",
+          "pct": 0.3
+        }
+      ],
+      "theoryByBook": [
+        {
+          "book": "《公共营养师（基础知识）》",
+          "pct": 68.7
+        },
+        {
+          "book": "《公共营养师（三级）》",
+          "pct": 31.3
+        }
+      ],
+      "skillByBook": [
+        {
+          "book": "《公共营养师（三级）》",
+          "pct": 70.6
+        },
+        {
+          "book": "《公共营养师（基础知识）》",
+          "pct": 29.4
+        }
+      ]
+    },
+    "books": {
+      "total": 1304,
+      "withBookPct": 99.8,
+      "list": [
+        {
+          "book": "《公共营养师（基础知识）》",
+          "questions": 703,
+          "pct": 53.9
+        },
+        {
+          "book": "《公共营养师（三级）》",
+          "questions": 498,
+          "pct": 38.2
+        },
+        {
+          "book": "《中国居民膳食营养素参考摄入量（2023版）》",
+          "questions": 308,
+          "pct": 23.6
+        },
+        {
+          "book": "《中国居民膳食指南（2022）》",
+          "questions": 147,
+          "pct": 11.3
+        },
+        {
+          "book": "《7岁以下儿童生长标准》",
+          "questions": 43,
+          "pct": 3.3
+        },
+        {
+          "book": "《体重管理指导原则（2024年版）》",
+          "questions": 30,
+          "pct": 2.3
+        },
+        {
+          "book": "《中国营养师培训教材》",
+          "questions": 29,
+          "pct": 2.2
+        },
+        {
+          "book": "《人群健康监测人体测量方法》",
+          "questions": 26,
+          "pct": 2
+        },
+        {
+          "book": "《食品安全国家标准 食品添加剂使用标准》",
+          "questions": 22,
+          "pct": 1.7
+        },
+        {
+          "book": "《Malnutrition in children》",
+          "questions": 19,
+          "pct": 1.5
+        },
+        {
+          "book": "《婴幼儿喂养与营养指南》",
+          "questions": 19,
+          "pct": 1.5
+        },
+        {
+          "book": "《婴幼儿辅食添加营养指南》",
+          "questions": 18,
+          "pct": 1.4
+        },
+        {
+          "book": "《关于进一步规范餐饮服务提供者食品添加剂管理的公告》",
+          "questions": 17,
+          "pct": 1.3
+        },
+        {
+          "book": "《中国血脂管理指南（2023年）》",
+          "questions": 17,
+          "pct": 1.3
+        },
+        {
+          "book": "《中国婴幼儿喂养指南（2022）》",
+          "questions": 16,
+          "pct": 1.2
+        }
+      ],
+      "cumulative": [
+        {
+          "book": "《公共营养师（基础知识）》",
+          "cumPct": 53.9
+        },
+        {
+          "book": "《公共营养师（三级）》",
+          "cumPct": 90.4
+        },
+        {
+          "book": "《中国居民膳食营养素参考摄入量（2023版）》",
+          "cumPct": 91
+        },
+        {
+          "book": "《中国居民膳食指南（2022）》",
+          "cumPct": 93.5
+        },
+        {
+          "book": "《7岁以下儿童生长标准》",
+          "cumPct": 94.9
+        },
+        {
+          "book": "《体重管理指导原则（2024年版）》",
+          "cumPct": 95.1
+        },
+        {
+          "book": "《中国营养师培训教材》",
+          "cumPct": 96.5
+        },
+        {
+          "book": "《人群健康监测人体测量方法》",
+          "cumPct": 96.6
+        }
+      ]
+    }
+  },
+  "rd": {
+    "totalQuestions": 1850,
+    "years": "2017-2026",
+    "books": {
+      "total": 1850,
+      "withBookPct": 97.1,
+      "list": [
+        {
+          "book": "《营养与食品卫生学》",
+          "questions": 808,
+          "pct": 43.7
+        },
+        {
+          "book": "《中国营养师培训教材》",
+          "questions": 690,
+          "pct": 37.3
+        },
+        {
+          "book": "《临床营养学》",
+          "questions": 179,
+          "pct": 9.7
+        },
+        {
+          "book": "《现代临床营养学》",
+          "questions": 165,
+          "pct": 8.9
+        },
+        {
+          "book": "《中国居民膳食营养素参考摄入量（2023版）》",
+          "questions": 118,
+          "pct": 6.4
+        },
+        {
+          "book": "《中国居民膳食指南（2022）》",
+          "questions": 81,
+          "pct": 4.4
+        },
+        {
+          "book": "《生理学》",
+          "questions": 72,
+          "pct": 3.9
+        },
+        {
+          "book": "《生物化学与分子生物学》",
+          "questions": 49,
+          "pct": 2.6
+        },
+        {
+          "book": "《流行病学》",
+          "questions": 46,
+          "pct": 2.5
+        },
+        {
+          "book": "《卫生统计学》",
+          "questions": 46,
+          "pct": 2.5
+        },
+        {
+          "book": "《食物营养学》",
+          "questions": 44,
+          "pct": 2.4
+        },
+        {
+          "book": "《成人慢性肾脏病食养指南（2024年版）》",
+          "questions": 36,
+          "pct": 1.9
+        },
+        {
+          "book": "《食品安全国家标准 食品添加剂使用标准》",
+          "questions": 31,
+          "pct": 1.7
+        },
+        {
+          "book": "《成人高尿酸血症与痛风食养指南（2024年版）》",
+          "questions": 28,
+          "pct": 1.5
+        },
+        {
+          "book": "《中华人民共和国食品安全法》",
+          "questions": 25,
+          "pct": 1.4
+        }
+      ],
+      "cumulative": [
+        {
+          "book": "《营养与食品卫生学》",
+          "cumPct": 43.7
+        },
+        {
+          "book": "《中国营养师培训教材》",
+          "cumPct": 56.5
+        },
+        {
+          "book": "《临床营养学》",
+          "cumPct": 62.8
+        },
+        {
+          "book": "《现代临床营养学》",
+          "cumPct": 67
+        },
+        {
+          "book": "《中国居民膳食营养素参考摄入量（2023版）》",
+          "cumPct": 69.5
+        },
+        {
+          "book": "《中国居民膳食指南（2022）》",
+          "cumPct": 71.6
+        },
+        {
+          "book": "《生理学》",
+          "cumPct": 73.9
+        },
+        {
+          "book": "《生物化学与分子生物学》",
+          "cumPct": 75.5
+        }
+      ]
+    },
+    "booksRecent": {
+      "years": "2024-2026",
+      "total": 593,
+      "withBookPct": 97,
+      "list": [
+        {
+          "book": "《营养与食品卫生学》",
+          "questions": 271,
+          "pct": 45.7
+        },
+        {
+          "book": "《中国营养师培训教材》",
+          "questions": 208,
+          "pct": 35.1
+        },
+        {
+          "book": "《临床营养学》",
+          "questions": 57,
+          "pct": 9.6
+        },
+        {
+          "book": "《现代临床营养学》",
+          "questions": 47,
+          "pct": 7.9
+        },
+        {
+          "book": "《中国居民膳食营养素参考摄入量（2023版）》",
+          "questions": 44,
+          "pct": 7.4
+        },
+        {
+          "book": "《中国居民膳食指南（2022）》",
+          "questions": 33,
+          "pct": 5.6
+        },
+        {
+          "book": "《生理学》",
+          "questions": 21,
+          "pct": 3.5
+        },
+        {
+          "book": "《食物营养学》",
+          "questions": 18,
+          "pct": 3
+        },
+        {
+          "book": "《卫生统计学》",
+          "questions": 17,
+          "pct": 2.9
+        },
+        {
+          "book": "《生物化学与分子生物学》",
+          "questions": 14,
+          "pct": 2.4
+        },
+        {
+          "book": "《流行病学》",
+          "questions": 14,
+          "pct": 2.4
+        },
+        {
+          "book": "《成人慢性肾脏病食养指南（2024年版）》",
+          "questions": 12,
+          "pct": 2
+        },
+        {
+          "book": "《餐饮服务食品安全操作规范（2018）》",
+          "questions": 11,
+          "pct": 1.9
+        },
+        {
+          "book": "《餐饮服务通用卫生规范》",
+          "questions": 10,
+          "pct": 1.7
+        },
+        {
+          "book": "《成人高尿酸血症与痛风食养指南（2024年版）》",
+          "questions": 10,
+          "pct": 1.7
+        }
+      ],
+      "cumulative": [
+        {
+          "book": "《营养与食品卫生学》",
+          "cumPct": 45.7
+        },
+        {
+          "book": "《中国营养师培训教材》",
+          "cumPct": 55.3
+        },
+        {
+          "book": "《临床营养学》",
+          "cumPct": 61.7
+        },
+        {
+          "book": "《现代临床营养学》",
+          "cumPct": 65.3
+        },
+        {
+          "book": "《中国居民膳食营养素参考摄入量（2023版）》",
+          "cumPct": 67.8
+        },
+        {
+          "book": "《中国居民膳食指南（2022）》",
+          "cumPct": 70.8
+        },
+        {
+          "book": "《生理学》",
+          "cumPct": 73
+        },
+        {
+          "book": "《食物营养学》",
+          "cumPct": 74.4
+        }
+      ]
+    }
+  }
+}

@@ -250,6 +250,18 @@ export default function Home() {
             <b>刷题工具怎么选</b>
             <span>题库纯度 · 真题年份 · 解析 · 图解 · 收费，四维对比</span>
           </Link>
+          <Link className="guide-link" href="/guide/gongying-kaoshenme">
+            <b>公共营养师三级考什么？题型、分值、及格线</b>
+            <span>两科题型分值 · 内容出自哪本教材 · 各章分值占比</span>
+          </Link>
+          <Link className="guide-link" href="/guide/gongying-gaopin">
+            <b>公共营养师三级高频考点清单</b>
+            <span>12 场真题统计 · 61 个考点覆盖近一半题目</span>
+          </Link>
+          <Link className="guide-link" href="/guide/gongying-chongfulv">
+            <b>公共营养师真题重复率高吗？</b>
+            <span>考点重复近九成，原题很少 · 刷几场够用</span>
+          </Link>
           <Link className="guide-link" href="/guide/gongying">
             <b>公共营养师报考指南</b>
             <span>等级划分 · 各级条件 · 费用区间 · 防坑要点</span>

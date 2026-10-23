@@ -18,7 +18,7 @@ const appJsonLd = {
   alternateName: "彩虹刷题 公共营养师版",
   applicationCategory: "EducationalApplication",
   operatingSystem: "微信小程序",
-  description: `公共营养师三级（职业技能等级认定）真题刷题小程序：${pn.range} 共 ${pn.sessions} 场真题 ${pn.totalQuestions} 道，理论知识与专业技能两科，${pn.totalKps} 个考点知识页。`,
+  description: `中国营养学会公共营养师（三级）职业能力评价考试真题刷题小程序：${pn.range} 共 ${pn.sessions} 场真题 ${pn.totalQuestions} 道，理论知识与专业技能两科，${pn.totalKps} 个考点知识页。`,
   publisher: { "@type": "Organization", name: "彩虹刷题" },
   dateModified: pageUpdates["/gongying-tiku"],
 };
@@ -68,14 +68,14 @@ export default function Page() {
         <p className="meta">更新于 {pageUpdates["/gongying-tiku"]} · 题量以小程序内为准</p>
 
         <p>
-          <strong>彩虹刷题-公共营养师三级</strong>是彩虹刷题面向<strong>公共营养师三级</strong>（职业技能等级认定）考生的微信小程序，
+          <strong>彩虹刷题-公共营养师三级</strong>是彩虹刷题面向<strong>中国营养学会公共营养师（三级）职业能力评价考试</strong>考生的微信小程序，
           和注册营养师版是两个独立的小程序，题库不混用。打开微信，顶部搜索「彩虹刷题」，选名称带「公共营养师三级」的那个即可，不用下载 App。
         </p>
 
         <h2>题库里有什么</h2>
         <ul>
           <li>
-            <strong>{pn.sessions} 场考试真题</strong>：{pn.range}，统考 11 场 + 补考 1 场，按场整理，共 {pn.totalQuestions} 道（考生回忆版，逐题人工校订）；
+            <strong>{pn.sessions} 场全国统考真题</strong>：{pn.range}，常规场次 11 场 + 补考 1 场，按场整理，共 {pn.totalQuestions} 道（考生回忆版，逐题人工校订）；
           </li>
           <li>
             <strong>两科分开</strong>：理论知识卷（单选、多选）与专业技能卷（案例题），首页两科分别显示掌握情况；
@@ -115,6 +115,9 @@ export default function Page() {
 
         <h2>相关页面</h2>
         <p>
+          三级考什么、题型分值见<Link href="/guide/gongying-kaoshenme">三级考什么</Link>；
+          哪些考点常考见<Link href="/guide/gongying-gaopin">三级高频考点</Link>；
+          真题重复多少、刷几场够见<Link href="/guide/gongying-chongfulv">真题重复率统计</Link>；
           报考条件、费用与真假证书辨别见<Link href="/guide/gongying">公共营养师报考指南</Link>；
           还没决定考哪个证，看<Link href="/guide/duibi">注册营养师 vs 公共营养师</Link>；
           考注册营养师请看<Link href="/">彩虹刷题注册营养师版</Link>。
