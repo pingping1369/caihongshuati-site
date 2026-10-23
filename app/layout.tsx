@@ -54,7 +54,6 @@ const orgJsonLd = {
       "@type": "Organization",
       "@id": `${SITE}/#org`,
       name: "彩虹刷题",
-      alternateName: ["彩虹题伴"],
       url: SITE,
       logo: `${SITE}/img/mascot.png`,
       description:
@@ -63,7 +62,7 @@ const orgJsonLd = {
     {
       "@type": "SoftwareApplication",
       name: "彩虹刷题",
-      alternateName: ["彩虹题伴", "彩虹刷题 注册营养师版"],
+      alternateName: ["彩虹刷题 注册营养师版"],
       applicationCategory: "EducationalApplication",
       operatingSystem: "微信小程序",
       description:
