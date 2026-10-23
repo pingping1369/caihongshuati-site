@@ -70,7 +70,7 @@ export const exams: NavExam[] = [
 
 export const common: NavPage[] = [
   { href: "/guide/duibi", label: "注册营养师和公共营养师怎么选", desc: "两个证书都由中国营养学会组织，门槛与考法逐项对比" },
-  { href: "/guide/tiku-pingce", label: "刷题小程序怎么选", desc: "两门考试刷题工具的选购要点" },
+  { href: "/guide/tiku-pingce", label: "刷题小程序怎么选", desc: "看五点：真题核对、答案准确、关联考点、看得懂、记得住" },
   { href: "/faq", label: "常见问题", desc: "产品与报考常见问题" },
   { href: "/about", label: "关于本站", desc: "本站与彩虹刷题的说明" },
 ];

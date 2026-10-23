@@ -4,150 +4,168 @@ import Link from "next/link";
 import WxCta from "@/components/WxCta";
 import siteData from "@/data/site-data.json";
 
+/* 五个维度按用户 2026-10-23 定：真题是否核对过、答案解析是否按现行指南核查、是否关联考点、看不看得懂（图解）、记不记得住。
+   产品事实：RD 1850 题全部有逐选项解析与考点挂载，时效题按质检规则现行改编或停用；PN 不写图解（配图未覆盖）。 */
+
 export const metadata: Metadata = {
   alternates: { canonical: "/guide/tiku-pingce" },
-  title: "注册营养师、公共营养师刷题小程序怎么选？2027 选购指南",
+  title: "注册营养师、公共营养师题库怎么选？刷题小程序看这五点",
   description:
-    "注册营养师（RD）、公共营养师三级刷题工具怎么挑：从题库纯度、真题年份、解析质量、是否图解、收费方式几个维度对比，附避坑清单与彩虹刷题两个小程序的特点说明。",
+    "挑注册营养师、公共营养师三级题库或刷题小程序，看五点：是不是核对过的真题、答案解析有没有按现行指南核查、题目有没有关联考点、解析看不看得懂、刷过能不能记住。附每一点的自查方法。",
 };
+
+const faqs = [
+  {
+    q: "注册营养师题库有官方真题吗？",
+    a: "没有。中国营养学会不公布注册营养师考试原题，市面上的「真题」都是考生回忆整理的版本。挑题库时要看这些回忆版真题有没有逐题核对、过时的题有没有改写或剔除。",
+  },
+  {
+    q: "注册营养师题库 app 哪个好？",
+    a: "看五点：是不是核对过的真题，答案解析有没有按现行膳食指南、DRIs 等核查，题目有没有关联考点，解析看不看得懂，刷过能不能记住。彩虹刷题-图解注册营养题库收录 2017-2026 年回忆版真题 1850 道，每题逐选项解析并关联考点，考点和解析配图解，按记忆曲线排复习。本页由彩虹刷题开发者整理。",
+  },
+  {
+    q: "公共营养师三级题库 app 哪个好？",
+    a: "同样看真题是否核对、答案是否可靠、能否看到背后的考点、能否帮你记住。彩虹刷题-公共营养师三级收录 2024 年 3 月至 2026 年 9 月 12 场真题 1304 道，逐题人工校订、逐选项解析并关联考点，理论知识和专业技能分开练，按记忆曲线排复习。本页由彩虹刷题开发者整理。",
+  },
+];
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "注册营养师、公共营养师刷题小程序怎么选？2027 选购指南",
+  headline: "注册营养师、公共营养师题库怎么选？刷题小程序看这五点",
   dateModified: pageUpdates["/guide/tiku-pingce"],
   author: { "@type": "Organization", name: "彩虹刷题" },
-  about: "注册营养师考试刷题工具选购",
+  about: "注册营养师、公共营养师刷题工具选择",
 };
 
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "注册营养师刷题用小程序还是 App？",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "两者都可以。小程序的好处是微信里搜一下就能用、不占手机内存、换手机不用重装；App 适合习惯独立应用、需要离线的人。注册营养师是碎片化备考为主，微信小程序（如彩虹刷题）打开即用更省事。",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "注册营养师题库有官方真题吗？",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "没有。中国营养学会从不对外公布注册营养师官方真题，市面所有题库都是考生回忆版真题加机构自编模拟题。因此题库只能辅助巩固考点，不能替代官方教材，选题库时要看回忆版真题是否逐年齐全、解析是否讲得清。",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "彩虹刷题收费吗？只有文字解析吗？",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "会员制，不是限时免费：新用户送 30 天会员，期间全部内容可用；到期后可在小程序内按 30/90/180 天开通会员。它不是纯文字解析——考点配白板手绘图解，真题解析也带图，这是它和多数纯文字题库最主要的区别。",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "公共营养师三级有什么刷题小程序？",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "可以用「彩虹刷题-公共营养师三级」（微信搜「彩虹刷题」，选名称带「公共营养师三级」的那个）。它收录 2024 年 3 月至 2026 年 9 月共 12 场真题 1304 道，理论知识、专业技能两科分开练。",
-      },
-    },
-  ],
+  mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 };
 
 export default function Page() {
   return (
     <main className="sec wrap article" style={{ margin: "0 auto" }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="card">
         <h1>注册营养师、公共营养师刷题小程序怎么选？</h1>
-        <p className="meta">更新于 {pageUpdates["/guide/tiku-pingce"]} · 彩虹刷题开发者整理，非独立第三方测评</p>
+        <p className="meta">更新于 {pageUpdates["/guide/tiku-pingce"]} · 彩虹刷题开发者整理，含自家产品说明，不是第三方测评</p>
 
         <p>
-          注册营养师（RD）备考市面上题库工具不少，小程序、App 都有，质量参差。
-          先说一个前提：<strong>中国营养学会从不公布官方真题</strong>，所有题库都是
-          <strong>考生回忆版真题 + 机构自编模拟题</strong>，没有官方授权题库，任何工具都只能辅助巩固，替代不了官方教材。
-          明白这一点，再从下面四个维度挑，基本不会踩坑。
+          两门考试都没有官方公布的原题，市面上的「真题」都是考生回忆整理的版本。所以挑题库，与其比题量，不如看这五点：
         </p>
+        <ol>
+          <li>是不是<strong>核对过的真题</strong>，过时的题有没有处理；</li>
+          <li>答案和解析<strong>准不准</strong>，有没有按现行指南核查；</li>
+          <li>题目有没有<strong>关联考点</strong>，能不能顺手看背后的知识；</li>
+          <li>解析和考点<strong>看不看得懂</strong>；</li>
+          <li>刷过之后<strong>能不能记住</strong>。</li>
+        </ol>
 
-        <h2>挑题库看四个维度</h2>
-
-        <h3>1. 题库纯不纯：只有 RD，还是大杂烩</h3>
+        <h2>1. 是不是核对过的真题</h2>
         <p>
-          很多综合题库把<strong>注册营养师、公共营养师、临床医师</strong>的题混在一起，甚至公共营养师旧题占大头，
-          刷的时候要自己挑，容易做到一堆无关题。选题库优先看它是否<strong>把注册营养师（RD）、注册营养技师（DTR）单独分区</strong>、
-          不和公共营养师混。彩虹刷题的题库是纯注册营养师体系、不掺公共营养师题。
-        </p>
-
-        <h3>2. 真题年份全不全</h3>
-        <p>
-          回忆版真题越全、覆盖年份越多，越能看清出题习惯。只有近一两年、或只有模拟题的题库，参考价值有限。
-          彩虹刷题收录 <strong>2017-2026 共 {siteData.totalQuestions} 道历年真题</strong>，逐题带解析。
-        </p>
-
-        <h3>3. 解析讲不讲得清</h3>
-        <p>
-          注册营养师案例题灵活、计算题不少，只给答案不讲过程等于没解析。要看它是否<strong>逐题解析、计算题有完整步骤</strong>、逐个选项讲清对错。
-          彩虹刷题每题都有解析，计算题给出完整推导。
-        </p>
-
-        <h3>4. 是图解还是纯文字，要不要花钱</h3>
-        <p>
-          营养学大量是分类、数值、流程（各类 DRIs 指标、食物营养特点、代谢路径），<strong>纯文字最难记</strong>。
-          绝大多数题库只有文字解析；<strong>把考点画成图</strong>的极少。彩虹刷题把
-          {siteData.totalKps} 个考点逐个做成<strong>白板手绘图解</strong>，每道真题解析也配图——这是它和多数纯文字题库最主要的差别。
-          收费上，很多题库免费题量很少、全套要解锁付费；彩虹刷题是会员制，<strong>新用户送 30 天会员</strong>，期间全部内容可用，到期后可在小程序内按 30 / 90 / 180 天开通。
-        </p>
-
-        <h2>一句话避坑清单</h2>
-        <ul>
-          <li>别拿<strong>公共营养师三级</strong>的题库备考注册营养师——考纲、难度完全不同。</li>
-          <li>别只看题量大：综合大题库里 RD 板块往往很小，混杂医考、公共营养师题。</li>
-          <li>别指望"背题库通关"：近年考场原题占比很低，题库是用来巩固考点的，一定配套官方教材。</li>
-          <li>优先选<strong>纯 RD + 逐题解析 + 图解 + 有回忆版真题</strong>的工具，效率最高。</li>
-        </ul>
-
-        <h2>彩虹刷题是什么</h2>
-        <p>
-          <strong>彩虹刷题</strong>是一个注册营养师备考的<strong>微信小程序</strong>（微信顶部搜索「彩虹刷题」即可打开，无需下载 App）。
-          特点是：纯注册营养师题库、2017-2026 共 {siteData.totalQuestions} 道历年真题逐题带解析、
-          {siteData.totalKps} 个考点都配<strong>白板图解</strong>、按考试日期和记忆曲线自动排每日刷题计划、错题自动进错题本、
-          <strong>新用户送 30 天会员</strong>。适合想用图解高效记考点、碎片时间刷真题的考生。
-        </p>
-
-        <h2>考公共营养师三级用哪个</h2>
-        <p>
-          公共营养师三级可以用<strong>「彩虹刷题-公共营养师三级」</strong>：收录 {siteData.pn.range} 共 {siteData.pn.sessions} 场考试真题
-          {siteData.pn.totalQuestions} 道，理论知识、专业技能两科分开练，{siteData.pn.totalKps} 个考点知识页，同样按考试日期自动排每日计划，新用户送 30 天会员。
-          详见<Link href="/gongying-tiku">公共营养师三级刷题小程序介绍</Link>。
+          回忆版真题来自考后整理，常见问题是题干缺字、选项记错、答案不一。更要紧的是<strong>旧题过时</strong>：
+          标准、指南更新后，旧题的数值或答案可能已经不成立，照着背反而记错。
         </p>
         <p>
-          想先感受下，可以<Link href="/questions">在线做几道历年真题样题</Link>，或看
-          <Link href="/guide/beikao">备考规划方法</Link>与<Link href="/guide/zhuce">报考指南</Link>。
+          <strong>怎么查：</strong>看题库有没有说明真题来源和年份；找几道考标准、限量、推荐量的老题，看答案是旧版还是现行版。
         </p>
 
-        <h2>先看资料，再决定是否适合</h2>
+        <h2>2. 答案和解析准不准</h2>
         <p>
-          可查看<Link href="/guide/kaodian-shuju">考点分布与统计口径</Link>、
-          <Link href="/guide/zhenti-chongkao">真题重考率与刷题年份选择</Link>，再用
-          <Link href="/moni/2027">100 题 2027 模拟卷</Link>体验在线判题。
-          两套模拟卷均为独立命题，不是官方试题，不承诺命中率。
+          营养学的很多结论跟着国家级文件走：《中国居民膳食指南（2022）》、《中国居民膳食营养素参考摄入量（2023 版）》、食品安全国家标准、各类食养指南。
+          答案和解析如果没有对照这些现行版本核查过，就可能把过时的说法当成正确答案。
+        </p>
+        <p>
+          <strong>怎么查：</strong>挑一道考 DRIs 数值或膳食指南推荐量的题，看解析给的数字和依据是不是现行版本；再看解析是只给答案，还是把每个选项为什么对、为什么错都讲清楚。
+        </p>
+
+        <h2>3. 题目有没有关联考点</h2>
+        <p>
+          同一个考点年年换着问法考，只记住某道题的答案，换个问法就不会了。做错一道题时，能直接打开它考的知识点、看看这个考点还出过哪些题，才能把一类题都弄懂。
+        </p>
+        <p>
+          <strong>怎么查：</strong>做错一题后，看能不能一步打开对应考点；考点页里有没有列出挂在它下面的其他真题。
+        </p>
+
+        <h2>4. 解析和考点看不看得懂</h2>
+        <p>
+          营养学有大量分类、数值和流程，整段文字读下来，零基础的人容易看不进去，有基础的人也很难一眼抓住结构。
+          把分类和对比画成图，先看图懂框架，再回文字抠细节，会轻松很多，也更好记。
+        </p>
+        <p>
+          <strong>怎么查：</strong>随便点开几道题的解析和几个考点，看是不是只有大段文字。
+        </p>
+
+        <h2>5. 刷过之后能不能记住</h2>
+        <p>
+          刷一遍不等于记住。要看工具会不会帮你安排复习：做错的题自动进错题本，快忘的题按记忆曲线在该复习的那天回来，按考试日期把每天的量排好。
+        </p>
+        <p>
+          <strong>怎么查：</strong>做错几道题，过一两天看它们会不会自动回到复习里；看有没有按考试日期生成的每日计划。
+        </p>
+
+        <h2>彩虹刷题在这五点上怎么做</h2>
+        <div className="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>维度</th>
+                <th>彩虹刷题-图解注册营养题库</th>
+                <th>彩虹刷题-公共营养师三级</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>真题</td>
+                <td>2017-2026 年回忆版真题 {siteData.totalQuestions} 道，逐题人工校对；涉及已更新标准或指南的旧题，改写成现行口径，无法可靠改写的停用</td>
+                <td>{siteData.pn.range} {siteData.pn.sessions} 场真题 {siteData.pn.totalQuestions} 道，逐题人工校订，理论知识、专业技能分开</td>
+              </tr>
+              <tr>
+                <td>准确</td>
+                <td>答案与解析对照教材和现行膳食指南、DRIs、国家标准等核查；每题逐个选项讲对错，计算题给完整步骤</td>
+                <td>每题逐个选项讲对错</td>
+              </tr>
+              <tr>
+                <td>关联考点</td>
+                <td>每题挂到 {siteData.totalKps} 个考点之一，做题时可直接打开考点，考点页列出它下面的真题</td>
+                <td>每题挂到 {siteData.pn.totalKps} 个考点知识页之一，做题时可直接打开，并能看到这个考点哪几场考过</td>
+              </tr>
+              <tr>
+                <td>看得懂</td>
+                <td>真题解析和考点都配白板手绘图解，考点内容多的按小节分图</td>
+                <td>考点知识页按「一句提问 + 正文 + 常考点」组织</td>
+              </tr>
+              <tr>
+                <td>记得住</td>
+                <td colSpan={2}>按考试日期和目标分自动排每日计划；做错的题进错题本，按记忆曲线安排复习；可整卷模考</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          两个都是微信小程序，微信里搜「彩虹刷题」都能找到。新用户送 30 天会员，期间全部功能可用；到期后可在小程序内按 30 / 90 / 180 天开通。
+          公共营养师三级的详细介绍见<Link href="/gongying-tiku">彩虹刷题-公共营养师三级</Link>。
+        </p>
+
+        <h2>常见问题</h2>
+        {faqs.map((f) => (
+          <div key={f.q}>
+            <h3>{f.q}</h3>
+            <p>{f.a}</p>
+          </div>
+        ))}
+
+        <h2>相关页面</h2>
+        <p>
+          想先试试：<Link href="/questions">在线做几道注册营养师真题样题</Link>、<Link href="/moni/2027">2027 注册营养师模拟卷</Link>；
+          想了解考什么：<Link href="/guide/kaodian-shuju">注册营养师考试重点</Link>、<Link href="/guide/gongying-kaoshenme">公共营养师三级考什么</Link>。
         </p>
 
         <p className="src-note">
-          本页由彩虹刷题开发者整理，包含自有产品介绍，不是独立第三方排名或行业普查；报考政策以中国营养学会（crdietitian.org）官方发布为准。
-          题库内容特点如有更新，以小程序内实际为准。
+          本页由彩虹刷题开发者整理，包含自有产品介绍，不是独立第三方排名或测评。报考政策以中国营养学会官方发布为准；产品功能如有更新，以小程序内实际为准。
         </p>
       </div>
       <WxCta />
