@@ -49,10 +49,6 @@ export const exams: NavExam[] = [
     hub: "/gongying-yingyangshi",
     groups: [
       {
-        title: "报考",
-        pages: [{ href: "/guide/gongying", label: "报考指南", desc: "等级划分、各级条件、费用区间与防坑要点" }],
-      },
-      {
         title: "考什么",
         pages: [
           { href: "/guide/gongying-kaoshenme", label: "三级考什么", desc: "两科题型、题量、分值、及格线与教材章节分布" },
@@ -69,7 +65,6 @@ export const exams: NavExam[] = [
 ];
 
 export const common: NavPage[] = [
-  { href: "/guide/duibi", label: "注册营养师和公共营养师怎么选", desc: "两个证书逐项对比" },
   { href: "/guide/tiku-pingce", label: "刷题小程序怎么选", desc: "两门考试刷题工具的选购要点" },
   { href: "/faq", label: "常见问题", desc: "产品与报考常见问题" },
   { href: "/about", label: "关于本站", desc: "本站与彩虹刷题的说明" },

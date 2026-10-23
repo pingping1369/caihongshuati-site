@@ -67,7 +67,7 @@ export default function Page() {
             <a href="https://www.crdietitian.org/" rel="nofollow noopener" target="_blank">
               crdietitian.org
             </a>
-            ，个人可在线报名（这一点与公共营养师不同——后者必须通过机构）；
+            ，个人可在线报名；
           </li>
           <li>报名前需按要求完成规定的课程学时；</li>
           <li>报名与培训整体费用大约在千元级，因课程渠道不同差异较大，以官方与授权课程方公示为准。</li>

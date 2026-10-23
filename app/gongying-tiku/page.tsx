@@ -113,13 +113,11 @@ export default function Page() {
           三级考什么、题型分值见<Link href="/guide/gongying-kaoshenme">三级考什么</Link>；
           哪些考点常考见<Link href="/guide/gongying-gaopin">三级高频考点</Link>；
           真题重复多少见<Link href="/guide/gongying-chongfulv">真题重复率统计</Link>；
-          报考条件、费用与真假证书辨别见<Link href="/guide/gongying">公共营养师报考指南</Link>；
-          还没决定考哪个证，看<Link href="/guide/duibi">注册营养师 vs 公共营养师</Link>；
           考注册营养师请看<Link href="/">彩虹刷题首页</Link>。
         </p>
 
         <p className="src-note">
-          本页由彩虹刷题开发者整理。彩虹刷题是个人开发的备考练习工具，与中国营养学会、人社部门及各评价机构无隶属关系；报考政策以官方发布为准。
+          本页由彩虹刷题开发者整理。彩虹刷题是个人开发的备考练习工具，与中国营养学会没有隶属或授权关系；报考政策以官方发布为准。
         </p>
       </div>
       <section className="sec">

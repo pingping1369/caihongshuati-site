@@ -165,14 +165,13 @@ export default function Page() {
         <h2>怎么开始准备</h2>
         <ul>
           <li>先看<Link href="/guide/gongying-gaopin">三级高频考点</Link>，知道哪些内容几乎每场都考；</li>
-          <li>再按场刷真题，做错的回到考点和教材补，详见<Link href="/guide/gongying-chongfulv">真题重复率与刷题场次</Link>；</li>
+          <li>再按场刷真题，做错的回到考点和教材补，详见<Link href="/guide/gongying-chongfulv">真题重复率统计</Link>；</li>
           <li>
             12 场真题可以在「<Link href="/gongying-tiku">彩虹刷题-公共营养师三级</Link>」小程序里按场刷，也能按两科同场模考，交卷后分科出分。
           </li>
         </ul>
 
         <p className="src-note">
-          公共营养师另有人社部门备案机构组织的职业技能等级认定，命题和安排与本页不同，见<Link href="/guide/gongying">公共营养师报考指南</Link>。
           计分规则与考试安排如有调整，以中国营养学会当年通知为准。
         </p>
       </div>

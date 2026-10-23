@@ -59,7 +59,7 @@ const orgJsonLd = {
       url: SITE,
       logo: `${SITE}/img/mascot.png`,
       description:
-        "个人开发的营养师备考刷题工具，与中国营养学会、人社部门无隶属关系。",
+        "个人开发的营养师备考刷题工具，与中国营养学会没有隶属或授权关系。",
     },
     {
       "@type": "SoftwareApplication",
@@ -139,7 +139,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="footer-inner">
               <span>© {new Date().getFullYear()} 彩虹刷题</span>
               <span className="legal">
-                本站为免费备考信息服务。报考政策以中国营养学会及各地人社部门官方发布为准，本站内容标注更新日期供参考，不构成报考承诺。
+                本站为免费备考信息服务。报考政策以中国营养学会官方发布为准，本站内容标注更新日期供参考，不构成报考承诺。
               </span>
             </div>
           </div>
