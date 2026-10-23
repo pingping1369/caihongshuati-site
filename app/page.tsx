@@ -195,7 +195,7 @@ export default function Home() {
           </Link>
         </div>
         <p className="sec-sub" style={{ marginTop: 16 }}>
-          彩虹刷题原名「彩虹题伴」，2026 年 10 月更名，内容与账号不变。新用户都送 30 天会员，到期后可在小程序内按天数开通。
+          新用户都送 30 天会员，到期后可在小程序内按天数开通。
         </p>
       </section>
 

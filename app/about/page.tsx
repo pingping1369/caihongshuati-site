@@ -14,7 +14,7 @@ export default function AboutPage() {
         <h1>关于本站</h1>
         <p className="meta">caihongshuati.com · 彩虹刷题官方网站</p>
         <p>
-          这里是微信小程序「彩虹刷题」的官网。彩虹刷题原名「彩虹题伴」，2026 年 10 月更名，由个人开发者维护，与中国营养学会、人社部门及评价机构无隶属关系。
+          这里是微信小程序「彩虹刷题」的官网。彩虹刷题由个人开发者维护，与中国营养学会、人社部门及评价机构无隶属关系。
           目前有两个小程序：注册营养师版「彩虹刷题」，与公共营养师三级版「<Link href="/gongying-tiku">彩虹刷题-公共营养师三级</Link>」，题库互不混用。本站提供产品介绍、
           <Link href="/questions">真题样题体验</Link>与
           <Link href="/guide/zhuce">报考信息整理</Link>。
