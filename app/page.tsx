@@ -2,6 +2,7 @@ import Link from "next/link";
 import QuestionCard, { Sample } from "@/components/QuestionCard";
 import WxCta from "@/components/WxCta";
 import siteData from "@/data/site-data.json";
+import { exams } from "@/lib/site-nav";
 
 export const metadata = { alternates: { canonical: "/" } };
 
@@ -182,7 +183,7 @@ export default function Home() {
         <p className="sec-sub">微信里搜「彩虹刷题」，两个都能找到。</p>
         <div className="guide-links">
           <Link className="guide-link" href="/guide/tiku-pingce">
-            <b>彩虹刷题 · 注册营养师</b>
+            <b>彩虹刷题-图解注册营养题库</b>
             <span>
               2017-2026 年真题 {siteData.totalQuestions} 道 · {siteData.totalKps} 个图解考点 · 按年份整卷模考
             </span>
@@ -219,63 +220,28 @@ export default function Home() {
         </p>
       </section>
 
-      {/* 报考指南入口 */}
-      <section className="sec wrap">
-        <div className="sec-h">
-          <h2>报考信息，一次说清</h2>
-        </div>
-        <p className="sec-sub">整理自官方与公开资料，标注更新时间，以官方最新通知为准。</p>
-        <div className="guide-links">
-          <Link className="guide-link" href="/guide/10tian-chongci">
-            <b>只剩 10 天怎么冲刺？一文说清</b>
-            <span>数据版取舍 · 一天一步日程表 · 该放弃什么直说</span>
-          </Link>
-          <Link className="guide-link" href="/guide/xinzheng-redian">
-            <b>2027 新政押题：18 个考点，每个一道题</b>
-            <span>新政当年就进卷的证据 · 18 道原创预测题带解析与依据</span>
-          </Link>
-          <Link className="guide-link" href="/guide/kaodian-shuju">
-            <b>考点分布数据统计（2017-2026）</b>
-            <span>1850 道真题逐题标注 · 模块占比 · 章节热度 · 高频考点榜</span>
-          </Link>
-          <Link className="guide-link" href="/guide/zhenti-chongkao">
-            <b>真题重考率：八成的题考老考点</b>
-            <span>逐年重考率 30%→八成 · 数据推出来的刷题策略</span>
-          </Link>
-          <Link className="guide-link" href="/guide/zhuce">
-            <b>注册营养师报考指南</b>
-            <span>报考条件 · 考试安排 · 报名方式 · 证书注册</span>
-          </Link>
-          <Link className="guide-link" href="/guide/tiku-pingce">
-            <b>刷题工具怎么选</b>
-            <span>题库纯度 · 真题年份 · 解析 · 图解 · 收费，四维对比</span>
-          </Link>
-          <Link className="guide-link" href="/guide/gongying-kaoshenme">
-            <b>公共营养师三级考什么？题型、分值、及格线</b>
-            <span>两科题型分值 · 内容出自哪本教材 · 各章分值占比</span>
-          </Link>
-          <Link className="guide-link" href="/guide/gongying-gaopin">
-            <b>公共营养师三级高频考点清单</b>
-            <span>12 场真题统计 · 61 个考点覆盖近一半题目</span>
-          </Link>
-          <Link className="guide-link" href="/guide/gongying-chongfulv">
-            <b>公共营养师真题重复率高吗？</b>
-            <span>考点重复近九成 · 约三成题有相似题</span>
-          </Link>
-          <Link className="guide-link" href="/guide/gongying">
-            <b>公共营养师报考指南</b>
-            <span>等级划分 · 各级条件 · 费用区间 · 防坑要点</span>
-          </Link>
-          <Link className="guide-link" href="/guide/duibi">
-            <b>两个证书怎么选</b>
-            <span>注册营养师 vs 公共营养师，逐项对比</span>
-          </Link>
-          <Link className="guide-link" href="/guide/beikao">
-            <b>考试内容与备考规划</b>
-            <span>科目题型 · 备考周期 · 复习方法</span>
-          </Link>
-        </div>
-      </section>
+      {/* 两门考试的资料入口：分组与文案来自 lib/site-nav.ts */}
+      {exams.map((ex) => (
+        <section className="sec wrap" key={ex.key}>
+          <div className="sec-h">
+            <h2>{ex.name}备考资料</h2>
+          </div>
+          <p className="sec-sub">
+            整理自官方与公开资料，数据来自本站题库逐题标注，标注更新时间。<Link href={ex.hub}>全部{ex.name}资料 ›</Link>
+          </p>
+          <div className="guide-links">
+            {ex.groups
+              .flatMap((g) => g.pages)
+              .filter((p) => p.href.startsWith("/guide/"))
+              .map((p) => (
+                <Link key={p.href} className="guide-link" href={p.href}>
+                  <b>{ex.name}{p.label}</b>
+                  <span>{p.desc}</span>
+                </Link>
+              ))}
+          </div>
+        </section>
+      ))}
 
       <WxCta />
     </main>

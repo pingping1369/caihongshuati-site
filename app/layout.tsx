@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Analytics from "@/components/Analytics";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { exams, common } from "@/lib/site-nav";
 import "./globals.css";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL || "https://caihongshuati.com";
@@ -96,27 +98,50 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <img src="/img/mascot.png" alt="彩虹刷题吉祥物" />
               彩虹刷题
             </Link>
-            <nav className="nav-links">
+            <nav className="nav-links" aria-label="主导航">
+              <Link href="/zhuce-yingyangshi">注册营养师</Link>
+              <Link href="/gongying-yingyangshi">公共营养师</Link>
               <Link href="/moni/2027">2027 模拟卷</Link>
-              <Link href="/gongying-tiku">公共营养师</Link>
-              <Link href="/questions">样题体验</Link>
-              <Link href="/guide/zhuce">报考指南</Link>
               <Link href="/faq">常见问题</Link>
             </nav>
           </div>
         </header>
+        <Breadcrumbs />
         {children}
         <footer className="footer">
-          <div className="wrap footer-inner">
-            <span>© {new Date().getFullYear()} 彩虹刷题</span>
-            <Link href="/about">关于本站</Link>
-            <Link href="/guide/zhuce">注册营养师报考</Link>
-            <Link href="/guide/gongying">公共营养师报考</Link>
-            <Link href="/gongying-tiku">公共营养师三级刷题</Link>
-            <Link href="/faq">常见问题</Link>
-            <span className="legal">
-              本站为免费备考信息服务。报考政策以中国营养学会及各地人社部门官方发布为准，本站内容标注更新日期供参考，不构成报考承诺。
-            </span>
+          <div className="wrap">
+            <nav className="sitemap" aria-label="网站地图">
+              {exams.map((ex) => (
+                <div key={ex.key}>
+                  <p className="sitemap-h">
+                    <Link href={ex.hub}>{ex.name}</Link>
+                  </p>
+                  <ul>
+                    {ex.groups.flatMap((g) => g.pages).map((p) => (
+                      <li key={p.href}>
+                        <Link href={p.href}>{p.href === "/" || p.href === "/gongying-tiku" ? "刷题小程序" : p.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              <div>
+                <p className="sitemap-h">通用</p>
+                <ul>
+                  {common.map((p) => (
+                    <li key={p.href}>
+                      <Link href={p.href}>{p.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </nav>
+            <div className="footer-inner">
+              <span>© {new Date().getFullYear()} 彩虹刷题</span>
+              <span className="legal">
+                本站为免费备考信息服务。报考政策以中国营养学会及各地人社部门官方发布为准，本站内容标注更新日期供参考，不构成报考承诺。
+              </span>
+            </div>
           </div>
         </footer>
         <Analytics />
