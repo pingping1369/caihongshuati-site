@@ -26,7 +26,7 @@ const short = (s: string) => `${s.slice(0, 2)}.${s.slice(2)}`;
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guide/gongying-chongfulv" },
-  title: "公共营养师真题重复率高吗？要刷几场？12 场真题统计",
+  title: "公共营养师真题重复率高吗？12 场真题统计",
   description: `按 2024 年 3 月至 2026 年 9 月 12 场公共营养师三级全国统考回忆版真题 ${pn.totalQuestions} 道统计：近四场 ${kpMin}%—${kpMax}% 的题考的是往届考过的考点；全库 ${sim.wholeBank.pct}% 的题在其他场次有相似题，近四场每场 ${simMin}%—${simMax}% 的题在往届有相似题。`,
 };
 
@@ -34,14 +34,6 @@ const faqs = [
   {
     q: "公共营养师真题重复率高吗？",
     a: `考点重复率很高，相似题有一定比例。按 12 场公共营养师三级全国统考回忆版真题统计，近四场 ${kpMin}%—${kpMax}% 的题考的是往届考过的考点；题干和选项相同或相近的相似题，全库约占 ${sim.wholeBank.pct}%，近四场每场有 ${simMin}%—${simMax}% 的题在往届出现过相似题。`,
-  },
-  {
-    q: "公共营养师只刷近一年的真题够吗？",
-    a: `考点覆盖还可以，相似题不够。只刷最近四场（约一年），能覆盖下一场约 ${win(4)}% 题目的考点；但近四场里，与前四场相似的题只有 ${p4Min}%—${p4Max}%，相似题更多来自更早的场次。建议把能找到的历年真题都刷一遍。`,
-  },
-  {
-    q: "公共营养师真题要刷几场？",
-    a: `只刷上一场能覆盖下一场约 ${win(1)}% 题目的考点，刷最近四场约 ${win(4)}%，最近八场约 ${win(8)}%，刷完全部往届约 ${win("all")}%。`,
   },
 ];
 
@@ -54,7 +46,7 @@ const faqJsonLd = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "公共营养师真题重复率高吗？要刷几场？",
+  headline: "公共营养师真题重复率高吗？",
   dateModified: pageUpdates["/guide/gongying-chongfulv"],
   author: { "@type": "Organization", name: "彩虹刷题" },
   about: "公共营养师三级考试真题重复率统计",
@@ -76,7 +68,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="card">
-        <h1>公共营养师真题重复率高吗？要刷几场？</h1>
+        <h1>公共营养师真题重复率高吗？</h1>
         <p className="meta">
           更新于 {pageUpdates["/guide/gongying-chongfulv"]} · 基于 12 场中国营养学会公共营养师（三级）全国统考回忆版真题 {pn.totalQuestions} 道的逐题标注
         </p>
@@ -126,13 +118,13 @@ export default function Page() {
           只考同一个知识点、但问的内容和选项都不同的题，不算。判定由多个模型分别完成，意见不一致的题逐对人工复核。
         </p>
 
-        <h2>只刷近一年够吗？</h2>
+        <h2>相似题多来自哪些场次</h2>
         <p>
-          看考点，近一年的真题覆盖面不错（见下图）；看相似题，就不够了。近四场里，在<strong>全部往届</strong>有相似题的占 {simMin}%—{simMax}%，
+          近四场里，在<strong>全部往届</strong>有相似题的占 {simMin}%—{simMax}%，
           但只和<strong>前四场</strong>比，只有 {p4Min}%—{p4Max}%。也就是说，近年再出现的相似题，更多来自一年以前的场次。
         </p>
 
-        <h2>只刷最近几场，能覆盖多少考点</h2>
+        <h2>近几场真题能覆盖多少考点</h2>
         <WindowBars
           rows={[
             { label: "最近 1 场", v: win(1) },
