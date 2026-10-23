@@ -60,7 +60,7 @@ export default function Page() {
           做完想系统补考点：<Link href="/guide/kaodian-shuju">考点分布数据</Link>列出了反复被考的核心考点，<Link href="/guide/zhenti-chongkao">真题重考率</Link>解释了为什么倒序刷近三年真题最划算，<Link href="/guide/xinzheng-redian">2027 新政押题</Link>补上新标准、新指南。
         </p>
         <p className="src-note">
-          本卷为彩虹刷题自命题模拟题，非官方真题；考点统计基于考生回忆版真题（中国营养学会不公布官方真题），考试范围以官方考纲为准。分数仅用于自我估计，不构成任何合格判定。
+          本卷为彩虹刷题自命题模拟题，非官方真题；考点统计基于考生回忆版真题，考试范围以官方考纲为准。分数仅用于自我估计，不构成任何合格判定。
         </p>
       </div>
       <WxCta />

@@ -39,7 +39,10 @@ export const exams: NavExam[] = [
       },
       {
         title: "刷题小程序",
-        pages: [{ href: "/", label: "彩虹刷题-图解注册营养题库", desc: "2017-2026 年真题 1850 道、864 个图解考点" }],
+        pages: [
+          { href: "/guide/tiku-pingce", label: "刷题小程序怎么选", desc: "看五点：真题核对、答案准确、关联考点、看得懂、记得住" },
+          { href: "/", label: "彩虹刷题-图解注册营养题库", desc: "2017-2026 年真题 1850 道、864 个图解考点" },
+        ],
       },
     ],
   },
@@ -62,7 +65,10 @@ export const exams: NavExam[] = [
       },
       {
         title: "刷题小程序",
-        pages: [{ href: "/gongying-tiku", label: "彩虹刷题-公共营养师三级", desc: "12 场真题 1304 道、435 个考点知识页" }],
+        pages: [
+          { href: "/guide/gongying-tiku-pingce", label: "刷题小程序怎么选", desc: "看五点：真题核对、答案准确、关联考点、看得懂、记得住" },
+          { href: "/gongying-tiku", label: "彩虹刷题-公共营养师三级", desc: "12 场真题 1304 道、435 个考点知识页" },
+        ],
       },
     ],
   },
@@ -70,7 +76,6 @@ export const exams: NavExam[] = [
 
 export const common: NavPage[] = [
   { href: "/guide/duibi", label: "注册营养师和公共营养师怎么选", desc: "两个证书都由中国营养学会组织，门槛与考法逐项对比" },
-  { href: "/guide/tiku-pingce", label: "刷题小程序怎么选", desc: "看五点：真题核对、答案准确、关联考点、看得懂、记得住" },
   { href: "/faq", label: "常见问题", desc: "产品与报考常见问题" },
   { href: "/about", label: "关于本站", desc: "本站与彩虹刷题的说明" },
 ];
