@@ -179,7 +179,7 @@ export default function Home() {
         <div className="sec-h">
           <h2>两门考试，两个小程序</h2>
         </div>
-        <p className="sec-sub">题库分开，不混题。都在微信里搜「彩虹刷题」，按名称选。</p>
+        <p className="sec-sub">微信里搜「彩虹刷题」，两个都能找到。</p>
         <div className="guide-links">
           <Link className="guide-link" href="/guide/tiku-pingce">
             <b>彩虹刷题 · 注册营养师</b>

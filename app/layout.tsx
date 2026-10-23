@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s - 彩虹刷题",
   },
   description:
-    "彩虹刷题是营养师真题刷题微信小程序：注册营养师版收录 2017-2026 年真题 1850 道、864 个图解考点；公共营养师三级版收录 12 场真题 1304 道。按考试日期与记忆曲线自动排期，微信搜「彩虹刷题」即可使用。",
+    "彩虹刷题是营养师真题刷题微信小程序：注册营养师收录 2017-2026 年真题 1850 道、864 个图解考点；公共营养师三级收录 12 场真题 1304 道。按考试日期与记忆曲线自动排期，微信搜「彩虹刷题」即可使用。",
   keywords: [
     "注册营养师", "公共营养师", "营养师题库", "营养师真题",
     "营养师考试", "营养师报考条件", "彩虹刷题",
@@ -62,7 +62,6 @@ const orgJsonLd = {
     {
       "@type": "SoftwareApplication",
       name: "彩虹刷题",
-      alternateName: ["彩虹刷题 注册营养师版"],
       applicationCategory: "EducationalApplication",
       operatingSystem: "微信小程序",
       description:

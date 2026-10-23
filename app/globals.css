@@ -55,7 +55,7 @@ img { max-width: 100%; display: block; }
 }
 .nav-inner { display: flex; align-items: center; gap: 32px; height: 60px; }
 .brand { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 700; color: var(--ink); }
-.brand img { width: 30px; height: 30px; }
+.brand img { width: 30px; height: 30px; object-fit: contain; }
 .brand:hover { text-decoration: none; }
 .nav-links { display: flex; gap: 24px; margin-left: auto; font-size: 15px; }
 .nav-links a { color: var(--sub); font-weight: 500; }

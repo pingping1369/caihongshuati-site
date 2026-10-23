@@ -53,7 +53,7 @@ const faqJsonLd = {
       name: "公共营养师三级有什么刷题小程序？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "可以用「彩虹刷题-公共营养师三级」（微信搜「彩虹刷题」，选名称带「公共营养师三级」的那个）。它和注册营养师版是两个独立小程序，题库不混；收录 2024 年 3 月至 2026 年 9 月共 12 场真题 1304 道，理论知识、专业技能两科分开练。",
+        text: "可以用「彩虹刷题-公共营养师三级」（微信搜「彩虹刷题」，选名称带「公共营养师三级」的那个）。它收录 2024 年 3 月至 2026 年 9 月共 12 场真题 1304 道，理论知识、专业技能两科分开练。",
       },
     },
   ],
@@ -128,8 +128,7 @@ export default function Page() {
 
         <h2>考公共营养师三级用哪个</h2>
         <p>
-          公共营养师和注册营养师考纲不同，题库最好分开。彩虹刷题给公共营养师三级单独做了一个小程序
-          <strong>「彩虹刷题-公共营养师三级」</strong>：收录 {siteData.pn.range} 共 {siteData.pn.sessions} 场考试真题
+          公共营养师三级可以用<strong>「彩虹刷题-公共营养师三级」</strong>：收录 {siteData.pn.range} 共 {siteData.pn.sessions} 场考试真题
           {siteData.pn.totalQuestions} 道，理论知识、专业技能两科分开练，{siteData.pn.totalKps} 个考点知识页，同样按考试日期自动排每日计划，新用户送 30 天会员。
           详见<Link href="/gongying-tiku">公共营养师三级刷题小程序介绍</Link>。
         </p>
