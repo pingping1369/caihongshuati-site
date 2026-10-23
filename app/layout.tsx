@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s - 彩虹刷题",
   },
   description:
-    "彩虹刷题是注册营养师考试刷题小程序：收录 2017-2026 历年真题 1850 道、864 个图解考点，刷题计划按记忆曲线自适应排期。微信搜一搜「彩虹刷题」即可使用。",
+    "彩虹刷题（原名彩虹题伴）是营养师真题刷题微信小程序：注册营养师版收录 2017-2026 年真题 1850 道、864 个图解考点；公共营养师三级版收录 12 场真题 1304 道。按考试日期与记忆曲线自动排期，微信搜「彩虹刷题」即可使用。",
   keywords: [
     "注册营养师", "公共营养师", "营养师题库", "营养师真题",
     "营养师考试", "营养师报考条件", "彩虹刷题",
@@ -42,11 +42,46 @@ export const metadata: Metadata = {
 
 const orgJsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "彩虹刷题",
-  url: SITE,
-  description:
-    "注册营养师考试刷题小程序官网：历年真题、图解考点、记忆曲线排期。",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: "彩虹刷题",
+      url: SITE,
+      description:
+        "彩虹刷题官网：注册营养师、公共营养师三级真题刷题微信小程序的介绍与备考资料。",
+    },
+    {
+      "@type": "Organization",
+      "@id": `${SITE}/#org`,
+      name: "彩虹刷题",
+      alternateName: ["彩虹题伴"],
+      url: SITE,
+      logo: `${SITE}/img/mascot.png`,
+      description:
+        "个人开发的营养师备考刷题工具，原名「彩虹题伴」，2026 年 10 月起统一更名为「彩虹刷题」。与中国营养学会、人社部门无隶属关系。",
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "彩虹刷题",
+      alternateName: ["彩虹题伴", "彩虹刷题 注册营养师版"],
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "微信小程序",
+      description:
+        "注册营养师（RD）真题刷题小程序：2017-2026 年真题 1850 道，864 个考点，解析与考点配图解，按考试日期与记忆曲线自动排期。新用户送 30 天会员。",
+      publisher: { "@id": `${SITE}/#org` },
+      url: SITE,
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "彩虹刷题-公共营养师三级",
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "微信小程序",
+      description:
+        "公共营养师三级真题刷题小程序：2024 年 3 月至 2026 年 9 月共 12 场真题 1304 道，理论知识与专业技能两科，435 个考点知识页。新用户送 30 天会员。",
+      publisher: { "@id": `${SITE}/#org` },
+      url: `${SITE}/gongying-tiku`,
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -65,6 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Link>
             <nav className="nav-links">
               <Link href="/moni/2027">2027 模拟卷</Link>
+              <Link href="/gongying-tiku">公共营养师</Link>
               <Link href="/questions">样题体验</Link>
               <Link href="/guide/zhuce">报考指南</Link>
               <Link href="/faq">常见问题</Link>
@@ -78,6 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/about">关于本站</Link>
             <Link href="/guide/zhuce">注册营养师报考</Link>
             <Link href="/guide/gongying">公共营养师报考</Link>
+            <Link href="/gongying-tiku">公共营养师三级刷题</Link>
             <Link href="/faq">常见问题</Link>
             <span className="legal">
               本站为免费备考信息服务。报考政策以中国营养学会及各地人社部门官方发布为准，本站内容标注更新日期供参考，不构成报考承诺。

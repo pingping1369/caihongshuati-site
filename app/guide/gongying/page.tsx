@@ -102,7 +102,7 @@ export default function Page() {
         <h2>下一步</h2>
         <p>
           还在纠结考哪个证？看<Link href="/guide/duibi">注册营养师 vs 公共营养师对比</Link>。 决定报考了就从真题开始——
-          <Link href="/questions">做几道样题</Link>感受一下。
+          公共营养师三级的历年真题可以用「<Link href="/gongying-tiku">彩虹刷题-公共营养师三级</Link>」小程序刷，两科分开练。
         </p>
 
         <p className="src-note">

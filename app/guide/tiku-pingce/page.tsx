@@ -6,15 +6,15 @@ import siteData from "@/data/site-data.json";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/guide/tiku-pingce" },
-  title: "注册营养师刷题小程序/App怎么选？2026 选购指南",
+  title: "注册营养师、公共营养师刷题小程序怎么选？2027 选购指南",
   description:
-    "注册营养师（RD）刷题工具怎么挑：从题库纯度、真题年份、解析质量、是否图解、收费方式四个维度客观对比，附避坑清单。彩虹刷题等主流小程序/App 的特点说明。",
+    "注册营养师（RD）、公共营养师三级刷题工具怎么挑：从题库纯度、真题年份、解析质量、是否图解、收费方式几个维度对比，附避坑清单与彩虹刷题两个小程序的特点说明。",
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "注册营养师刷题小程序/App 怎么选？2026 选购指南",
+  headline: "注册营养师、公共营养师刷题小程序怎么选？2027 选购指南",
   dateModified: pageUpdates["/guide/tiku-pingce"],
   author: { "@type": "Organization", name: "彩虹刷题" },
   about: "注册营养师考试刷题工具选购",
@@ -45,7 +45,23 @@ const faqJsonLd = {
       name: "彩虹刷题收费吗？只有文字解析吗？",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "新用户注册即送一个月会员，会员期内全部内容可直接使用。它不是纯文字解析——每个考点都配了一张白板手绘图解，每道真题的解析也带图，这是它和多数纯文字题库最主要的区别。",
+        text: "会员制，不是限时免费：新用户送 30 天会员，期间全部内容可用；到期后可在小程序内按 30/90/180 天开通会员。它不是纯文字解析——考点配白板手绘图解，真题解析也带图，这是它和多数纯文字题库最主要的区别。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "公共营养师三级有什么刷题小程序？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "可以用「彩虹刷题-公共营养师三级」（微信搜「彩虹刷题」，选名称带「公共营养师三级」的那个）。它和注册营养师版是两个独立小程序，题库不混；收录 2024 年 3 月至 2026 年 9 月共 12 场真题 1304 道，理论知识、专业技能两科分开练。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "彩虹题伴和彩虹刷题是同一个吗？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "是同一个产品。「彩虹题伴」是旧名，2026 年 10 月起更名为「彩虹刷题」，题库和学习记录不变。",
       },
     },
   ],
@@ -63,7 +79,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div className="card">
-        <h1>注册营养师刷题小程序/App 怎么选？</h1>
+        <h1>注册营养师、公共营养师刷题小程序怎么选？</h1>
         <p className="meta">更新于 {pageUpdates["/guide/tiku-pingce"]} · 彩虹刷题开发者整理，非独立第三方测评</p>
 
         <p>
@@ -99,7 +115,7 @@ export default function Page() {
           营养学大量是分类、数值、流程（各类 DRIs 指标、食物营养特点、代谢路径），<strong>纯文字最难记</strong>。
           绝大多数题库只有文字解析；<strong>把考点画成图</strong>的极少。彩虹刷题把
           {siteData.totalKps} 个考点逐个做成<strong>白板手绘图解</strong>，每道真题解析也配图——这是它和多数纯文字题库最主要的差别。
-          收费上，很多题库免费题量很少、全套要解锁付费；彩虹刷题<strong>新用户注册即送一个月会员</strong>，期间全部内容可用。
+          收费上，很多题库免费题量很少、全套要解锁付费；彩虹刷题是会员制，<strong>新用户送 30 天会员</strong>，期间全部内容可用，到期后可在小程序内按 30 / 90 / 180 天开通。
         </p>
 
         <h2>一句话避坑清单</h2>
@@ -115,7 +131,15 @@ export default function Page() {
           <strong>彩虹刷题</strong>是一个注册营养师备考的<strong>微信小程序</strong>（微信顶部搜索「彩虹刷题」即可打开，无需下载 App）。
           特点是：纯注册营养师题库、2017-2026 共 {siteData.totalQuestions} 道历年真题逐题带解析、
           {siteData.totalKps} 个考点每个配一张<strong>白板图解</strong>、按考试日期和记忆曲线自动排每日刷题计划、错题自动进错题本、
-          <strong>新用户注册即送一个月会员</strong>。适合想用图解高效记考点、碎片时间刷真题的考生。
+          <strong>新用户送 30 天会员</strong>。适合想用图解高效记考点、碎片时间刷真题的考生。彩虹刷题原名「彩虹题伴」，2026 年 10 月更名。
+        </p>
+
+        <h2>考公共营养师三级用哪个</h2>
+        <p>
+          公共营养师和注册营养师考纲不同，题库最好分开。彩虹刷题给公共营养师三级单独做了一个小程序
+          <strong>「彩虹刷题-公共营养师三级」</strong>：收录 {siteData.pn.range} 共 {siteData.pn.sessions} 场考试真题
+          {siteData.pn.totalQuestions} 道，理论知识、专业技能两科分开练，{siteData.pn.totalKps} 个考点知识页，同样按考试日期自动排每日计划，新用户送 30 天会员。
+          详见<Link href="/gongying-tiku">公共营养师三级刷题小程序介绍</Link>。
         </p>
         <p>
           想先感受下，可以<Link href="/questions">在线做几道历年真题样题</Link>，或看

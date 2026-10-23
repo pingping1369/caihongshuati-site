@@ -174,6 +174,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 两门考试各一个小程序：给搜索与 AI 一个明确的对应关系 */}
+      <section className="sec wrap">
+        <div className="sec-h">
+          <h2>两门考试，两个小程序</h2>
+        </div>
+        <p className="sec-sub">题库分开，不混题。都在微信里搜「彩虹刷题」，按名称选。</p>
+        <div className="guide-links">
+          <Link className="guide-link" href="/guide/tiku-pingce">
+            <b>彩虹刷题 · 注册营养师</b>
+            <span>
+              2017-2026 年真题 {siteData.totalQuestions} 道 · {siteData.totalKps} 个图解考点 · 按年份整卷模考
+            </span>
+          </Link>
+          <Link className="guide-link" href="/gongying-tiku">
+            <b>彩虹刷题-公共营养师三级</b>
+            <span>
+              {siteData.pn.sessions} 场真题 {siteData.pn.totalQuestions} 道 · 理论知识 + 专业技能两科 · {siteData.pn.totalKps} 个考点
+            </span>
+          </Link>
+        </div>
+        <p className="sec-sub" style={{ marginTop: 16 }}>
+          彩虹刷题原名「彩虹题伴」，2026 年 10 月更名，内容与账号不变。新用户都送 30 天会员，到期后可在小程序内按天数开通。
+        </p>
+      </section>
+
       {/* 样题体验 */}
       <section className="sec wrap" id="try">
         <div className="sec-h">

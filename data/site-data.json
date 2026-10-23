@@ -1,6 +1,12 @@
 {
   "totalQuestions": 1850,
   "totalKps": 864,
+  "pn": {
+    "totalQuestions": 1304,
+    "totalKps": 435,
+    "sessions": 12,
+    "range": "2024年3月—2026年9月"
+  },
   "years": {
     "2017": 191,
     "2018": 129,
