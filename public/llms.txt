@@ -40,7 +40,7 @@
 - [2027 新政押题](https://caihongshuati.com/guide/xinzheng-redian)：新政当年进卷的真题回执 + 18 个新政考点各配一道原创预测题（2027 年实施的 GB 28050-2025、GB 7718-2025、GB 29922-2025，2026 年版肌少症、脑卒中、骨质疏松食养指南，国民健康“十五五”规划等）
 - [公共营养师三级考什么](https://caihongshuati.com/guide/gongying-kaoshenme)：中国营养学会公共营养师（三级）两科题型、题量、分值、及格线，按 12 场真题统计的教材与章节分值分布
 - [公共营养师三级高频考点](https://caihongshuati.com/guide/gongying-gaopin)：12 场真题统计，61 个考点在 6 场及以上出现、覆盖约 47% 的题目，附完整清单
-- [公共营养师真题重复率](https://caihongshuati.com/guide/gongying-chongfulv)：考点重复率近四场 85%—90%；只刷最近 N 场能覆盖下一场多少考点
+- [公共营养师真题重复率](https://caihongshuati.com/guide/gongying-chongfulv)：近四场 85.5%—89.8% 的题考的是往届考过的考点；题干和选项相同或相近的相似题全库约占 31.4%，近四场每场 9.1%—21.3% 的题在往届有相似题（只和前四场比为 4.5%—15.7%）；只刷最近 N 场能覆盖下一场多少考点
 - [常见问题](https://caihongshuati.com/faq)：产品与报考 FAQ
 
 ## 备考数据（基于本题库 2017-2026 回忆版真题的逐题考点标注统计，2026-10 更新）

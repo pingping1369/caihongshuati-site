@@ -260,7 +260,7 @@ export default function Home() {
           </Link>
           <Link className="guide-link" href="/guide/gongying-chongfulv">
             <b>公共营养师真题重复率高吗？</b>
-            <span>考点重复近九成 · 刷几场够用</span>
+            <span>考点重复近九成 · 约三成题有相似题 · 刷几场够用</span>
           </Link>
           <Link className="guide-link" href="/guide/gongying">
             <b>公共营养师报考指南</b>

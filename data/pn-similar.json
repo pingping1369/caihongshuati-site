@@ -1,0 +1,107 @@
+{
+ "generated": "2026-10-23",
+ "groups": 169,
+ "wholeBank": {
+  "questions": 409,
+  "total": 1304,
+  "pct": 31.4
+ },
+ "sessions": [
+  {
+   "session": "2403",
+   "n": 105,
+   "vsAll": null,
+   "vsAllPct": null,
+   "vsPrev4": null,
+   "vsPrev4Pct": null
+  },
+  {
+   "session": "2406",
+   "n": 110,
+   "vsAll": 6,
+   "vsAllPct": 5.5,
+   "vsPrev4": null,
+   "vsPrev4Pct": null
+  },
+  {
+   "session": "2409",
+   "n": 110,
+   "vsAll": 14,
+   "vsAllPct": 12.7,
+   "vsPrev4": null,
+   "vsPrev4Pct": null
+  },
+  {
+   "session": "2412",
+   "n": 100,
+   "vsAll": 36,
+   "vsAllPct": 36,
+   "vsPrev4": null,
+   "vsPrev4Pct": null
+  },
+  {
+   "session": "2503",
+   "n": 113,
+   "vsAll": 32,
+   "vsAllPct": 28.3,
+   "vsPrev4": 32,
+   "vsPrev4Pct": 28.3
+  },
+  {
+   "session": "2506",
+   "n": 110,
+   "vsAll": 30,
+   "vsAllPct": 27.3,
+   "vsPrev4": 25,
+   "vsPrev4Pct": 22.7
+  },
+  {
+   "session": "2509",
+   "n": 109,
+   "vsAll": 19,
+   "vsAllPct": 17.4,
+   "vsPrev4": 16,
+   "vsPrev4Pct": 14.7
+  },
+  {
+   "session": "2512",
+   "n": 110,
+   "vsAll": 29,
+   "vsAllPct": 26.4,
+   "vsPrev4": 27,
+   "vsPrev4Pct": 24.5
+  },
+  {
+   "session": "2603",
+   "n": 108,
+   "vsAll": 23,
+   "vsAllPct": 21.3,
+   "vsPrev4": 17,
+   "vsPrev4Pct": 15.7
+  },
+  {
+   "session": "2606",
+   "n": 110,
+   "vsAll": 20,
+   "vsAllPct": 18.2,
+   "vsPrev4": 11,
+   "vsPrev4Pct": 10
+  },
+  {
+   "session": "2608",
+   "n": 109,
+   "vsAll": 19,
+   "vsAllPct": 17.4,
+   "vsPrev4": 10,
+   "vsPrev4Pct": 9.2
+  },
+  {
+   "session": "2609",
+   "n": 110,
+   "vsAll": 10,
+   "vsAllPct": 9.1,
+   "vsPrev4": 5,
+   "vsPrev4Pct": 4.5
+  }
+ ]
+}
