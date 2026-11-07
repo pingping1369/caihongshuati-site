@@ -10,7 +10,7 @@
 小程序在微信生态内是封闭的，百度和大多数 AI 助手抓不到。这个站是它在开放网络上的**可索引替身**：
 产品介绍 + 报考指南支柱页 + 真题样题，目标是被百度收录、被 AI 助手引用，把搜索流量导进小程序。
 
-增长专项的完整计划见主仓库 `注册营养师/增长专项/`。
+运营记录见主仓库 `产品运营/`：动作记在 `产品运营/运营记录/行动日志.md`，收录与 AI 推荐的巡检在 `产品运营/搜索与AI推荐/`。
 
 ## 技术栈
 
@@ -60,6 +60,14 @@ pnpm build    # 构建校验
 - `NEXT_PUBLIC_SITE_URL`：站点绝对地址，影响 sitemap/robots/OG（默认 https://caihongshuati.com）
 - `NEXT_PUBLIC_GA_ID`：Google Analytics 4 衡量 ID，不填则不注入埋点
 
+## 域名与部署
+
+- 域名 `caihongshuati.com`：腾讯云 DNSPod 注册，2026-08-22 购入，**到期 2027-08-22**，到期前续费。腾讯云有两个账号，域名在主账号 100000781394。
+- DNS：apex A 记录 → `76.76.21.21`；www CNAME → `cname-china.vercel-dns.com`（Vercel 的中国优化解析，不用默认的 `cname.vercel-dns.com`）。不改 NS。
+- www 和 `*.vercel.app` 308 跳到裸域名，写在 `next.config.mjs` 的 `redirects()`。
+- 未做 ICP 备案（2026-08 决定先不备案）。未备案也能被百度收录，只是抓取频次低。
+- 上站的通用做法和踩坑（GA4、GSC 验证、腾讯云登录与加购）见全局 skill `ship-site`。
+
 ## 新页面收录与发布闸门
 
 1. 新建页面时提供唯一标题、描述、H1 和 `metadata.alternates.canonical`（自身路径，不可都指向首页），并从相关页面添加普通 HTML 链接。
@@ -77,6 +85,6 @@ pnpm submit:baidu --url=/guide/xinzheng-redian --submit
 
 IndexNow 使用已部署的根目录验证文件；脚本先核验生产页面及 canonical，再发到 Bing 的 IndexNow 接口，由协议参与引擎共享。HTTP 200=已接收、202=接收待验证，不代表已索引。百度有每日配额，以返回的 success/remain 为准，不自动重试失败提交。
 
-Google：在既有 GSC 资源重新提交更新的 sitemap，并对少量重点新页使用 URL 检查的“请求编入索引”。不要把普通内容页送 Google 的专用 Indexing API。Bing 也可重新提交 sitemap。每次把明确回执、URL 清单和未完成原因记录到主仓库 `增长专项/行动日志.md`；API token、账号 Cookie 不写入记录。
+Google：在既有 GSC 资源重新提交更新的 sitemap，并对少量重点新页使用 URL 检查的“请求编入索引”。不要把普通内容页送 Google 的专用 Indexing API。Bing 也可重新提交 sitemap。每次把明确回执、URL 清单和未完成原因记录到主仓库 `产品运营/运营记录/行动日志.md`；API token、账号 Cookie 不写入记录。
 
 参考：[Google 请求重新抓取](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)、[IndexNow 协议](https://www.indexnow.org/documentation)。
