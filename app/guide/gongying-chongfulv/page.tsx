@@ -6,7 +6,7 @@ import sim from "@/data/pn-similar.json";
 import { RepeatTrend, WindowBars } from "@/components/PnRepeatCharts";
 
 /* 数据：
-   - 考点重复、窗口覆盖：geo-stats.json（主仓库 产品运营/搜索与AI推荐/官网数据脚本/数据页统计-20261023/stats.js）；
+   - 考点重复、窗口覆盖：geo-stats.json（主仓库 产品运营/03搜索与AI推荐/官网数据脚本/数据页统计-20261023/stats.js）；
    - 相似题：pn-similar.json（主仓库 公共营养师/相似题/similar-groups.json 经 similar-stats.js 统计）。
    口径：考点重复＝本场题目的主考点在往届出现过；相似题＝题干相同或近似且选项相同或相近（含正反问、答案不同、反过来问），由多个模型分别判定、单票人工复核。 */
 

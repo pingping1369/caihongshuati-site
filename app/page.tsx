@@ -21,7 +21,7 @@ function Phone({ src, alt }: { src: string; alt: string }) {
 export default function Home() {
   return (
     <main>
-      {/* 英雄区：用途 + 三种刷法，口径同 产品运营/产品资料/产品价值与特色清单.md */}
+      {/* 英雄区：用途 + 三种刷法，口径同 产品运营/01产品资料/产品价值与特色清单.md */}
       <section className="wrap hero">
         <div>
           <h1>
