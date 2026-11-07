@@ -113,10 +113,6 @@ export default function Page() {
           还没决定考哪个证，看<Link href="/guide/duibi">注册营养师和公共营养师怎么选</Link>；
           考注册营养师请看<Link href="/">彩虹刷题首页</Link>。
         </p>
-
-        <p className="src-note">
-          本页由彩虹刷题开发者整理。彩虹刷题是个人开发的备考练习工具，与中国营养学会没有隶属或授权关系；报考政策以官方发布为准。
-        </p>
       </div>
       <section className="sec">
         <div className="cta-band">

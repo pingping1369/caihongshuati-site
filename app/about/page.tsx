@@ -14,7 +14,7 @@ export default function AboutPage() {
         <h1>关于本站</h1>
         <p className="meta">caihongshuati.com · 彩虹刷题官方网站</p>
         <p>
-          这里是微信小程序「彩虹刷题」的官网。彩虹刷题由个人开发者维护，与中国营养学会没有隶属或授权关系。
+          这里是微信小程序「彩虹刷题」的官网。
           注册营养师和公共营养师三级各有一个小程序（公共营养师三级为「<Link href="/gongying-tiku">彩虹刷题-公共营养师三级</Link>」），微信搜「彩虹刷题」都能找到。本站提供产品介绍、
           <Link href="/questions">真题样题体验</Link>与
           <Link href="/guide/zhuce">报考信息整理</Link>。

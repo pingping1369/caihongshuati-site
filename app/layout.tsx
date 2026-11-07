@@ -19,10 +19,9 @@ export const metadata: Metadata = {
     "注册营养师", "公共营养师", "营养师题库", "营养师真题",
     "营养师考试", "营养师报考条件", "彩虹刷题",
   ],
+  // 分享卡片的标题、描述、网址不在这里统一写死：各页面继承后都会变成同一个标题（搜索引擎会把它当成页面标题）。
+  // 不设时，抓取方使用各页面自己的 <title> 和 description。
   openGraph: {
-    title: "彩虹刷题 - 注册营养师真题图解题库",
-    description: "会刷真题，事半功倍。营养师历年真题全部关联考点、配有图解；智能刷题、按大纲刷、真题模考三种刷法。新用户送 30 天会员。",
-    url: SITE,
     siteName: "彩虹刷题",
     images: ["/img/mascot.png"],
     locale: "zh_CN",
@@ -63,7 +62,7 @@ const orgJsonLd = {
       url: SITE,
       logo: `${SITE}/img/mascot.png`,
       description:
-        "个人开发的营养师备考刷题工具，与中国营养学会没有隶属或授权关系。",
+        "营养师真题刷题微信小程序，注册营养师和公共营养师三级各有一个。",
     },
     {
       "@type": "SoftwareApplication",
