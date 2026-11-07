@@ -40,8 +40,8 @@ export const exams: NavExam[] = [
       {
         title: "刷题小程序",
         pages: [
-          { href: "/guide/tiku-pingce", label: "刷题小程序怎么选", desc: "看五点：真题核对、答案准确、关联考点、看得懂、记得住" },
-          { href: "/", label: "彩虹刷题-图解注册营养题库", desc: "2017-2026 年真题 1850 道、864 个图解考点" },
+          { href: "/", label: "彩虹刷题-图解注册营养题库", desc: "近十年真题 1850 道，题目全部关联考点并配有图解；智能刷题、按大纲刷真题、真题模拟考试三种刷法" },
+          { href: "/guide/tiku-pingce", label: "刷题小程序怎么选", desc: "挑任何题库都适用的五个标准：真题核对、答案准确、关联考点、看得懂、记得住" },
         ],
       },
     ],
@@ -66,8 +66,8 @@ export const exams: NavExam[] = [
       {
         title: "刷题小程序",
         pages: [
-          { href: "/guide/gongying-tiku-pingce", label: "刷题小程序怎么选", desc: "看五点：真题核对、答案准确、关联考点、看得懂、记得住" },
-          { href: "/gongying-tiku", label: "彩虹刷题-公共营养师三级", desc: "12 场真题 1304 道、435 个考点知识页" },
+          { href: "/gongying-tiku", label: "彩虹刷题-公共营养师三级", desc: "12 场真题 1304 道，题目全部关联考点；智能刷题、按大纲刷真题、整场模考三种刷法" },
+          { href: "/guide/gongying-tiku-pingce", label: "刷题小程序怎么选", desc: "挑任何题库都适用的五个标准：真题核对、答案准确、关联考点、看得懂、记得住" },
         ],
       },
     ],

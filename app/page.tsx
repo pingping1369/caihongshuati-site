@@ -21,15 +21,15 @@ function Phone({ src, alt }: { src: string; alt: string }) {
 export default function Home() {
   return (
     <main>
-      {/* 英雄区 */}
+      {/* 英雄区：用途 + 三种刷法，口径同 产品运营/产品资料/产品价值与特色清单.md */}
       <section className="wrap hero">
         <div>
           <h1>
-            注册营养师真题，<br />
-            <span className="hl">一图一题</span>，学得进去
+            会刷真题，<br />
+            <span className="hl">事半功倍</span>
           </h1>
           <p className="lede">
-            彩虹刷题是一个微信小程序：历年真题逐题配白板图解，刷题计划按你的考试日期和记忆曲线自动排——每天打开，直接开始。
+            彩虹刷题是注册营养师备考的微信小程序，收录近十年注册营养师真题，每道题都关联考点并配有图解。设好目标分数，就能每天自动安排要刷的题和要复习的内容；也可以在大纲页挑常考的考点先刷，或按年份整卷模考。
           </p>
           <div className="stats">
             <div className="stat">
@@ -61,28 +61,97 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 产品特性：图文交替 + 设备框 */}
+      {/* 三种刷题方式 */}
       <section className="sec wrap">
         <div className="sec-h">
-          <h2>它怎么帮你备考</h2>
+          <h2>三种刷题方式</h2>
         </div>
-        <p className="sec-sub">五件事，每件都替你省一类决策。</p>
+        <p className="sec-sub">
+          彩虹刷题收录 2017—2026 年注册营养师考试真题（考生回忆版），逐题人工校订并配有解析。围绕这十年真题，有三种练习方式，按自己的备考需要选。
+        </p>
+        <div className="guide-links three">
+          <div className="guide-link static">
+            <b>智能刷题</b>
+            <span>设好目标分数，优先刷高频考点的真题。每天刷什么、学过的什么时候复习，都自动安排。</span>
+          </div>
+          <div className="guide-link static">
+            <b>按大纲刷真题</b>
+            <span>所有真题都关联到考试大纲的考点。在大纲页按真题数量筛选，先练真题多的高频考点。</span>
+          </div>
+          <div className="guide-link static">
+            <b>真题模拟考试</b>
+            <span>选择 2017—2026 年的真题试卷模拟考试，交卷后回看答卷、成绩和错题。</span>
+          </div>
+        </div>
+      </section>
+
+      {/* 产品特色：图文交替 + 设备框 */}
+      <section className="sec wrap">
+        <div className="sec-h">
+          <h2>彩虹刷题的特色</h2>
+        </div>
 
         <div className="feat">
           <div className="feat-txt">
-            <span className="kicker">图解解析</span>
+            <span className="kicker">智能刷题</span>
             <h3>
-              大段解析看不懂？<em>一张图，懂了</em>
+              每天刷什么、什么时候复习，<em>自动安排</em>
             </h3>
             <p>
-              每道真题的解析，都画成了一张白板图：四个选项为什么对、为什么错，图上一格一格摆开——先看图懂框架，再回文字抠细节。
+              根据目标分数，优先选择高频考点及对应真题，再结合考试日期、考点掌握情况和遗忘曲线安排每日任务，让学习与复习衔接起来，帮助记牢学过的知识。
             </p>
             <ul className="feat-points">
-              <li>解析图与文字解析同屏，计算题给完整步骤</li>
-              <li>做错一道？考点就挂在题下面，点开连考点一起吃透</li>
+              <li>按遗忘曲线安排复习，快忘的考点自动回来</li>
+              <li>小程序随时打开就刷，零碎时间也能学</li>
             </ul>
           </div>
-          <figure className="kp-demo">
+          <div className="feat-img">
+            <Phone src="/img/screens/03-home.png" alt="彩虹刷题首页：今日自动安排的刷题与复习任务" />
+          </div>
+        </div>
+
+        <div className="feat rev">
+          <div className="feat-txt">
+            <span className="kicker amber">按大纲刷真题</span>
+            <h3>
+              先练<em>真题多的高频考点</em>
+            </h3>
+            <p>
+              每道真题都关联到考试大纲的考点。在大纲页按关联真题数量筛选，优先练习真题最多的高频考点，再按需要扩展到其他考点。
+            </p>
+          </div>
+          <div className="feat-img">
+            <Phone src="/img/screens/13-graph-l1.png" alt="彩虹刷题大纲页：按模块、章节、考点逐层查看" />
+          </div>
+        </div>
+
+        <div className="feat">
+          <div className="feat-txt">
+            <span className="kicker green">题目全部关联考点</span>
+            <h3>
+              不只记答案，<em>弄懂题目背后的知识</em>
+            </h3>
+            <p>
+              刷题时可以直接打开对应考点，查阅相关知识、概念区别和适用条件，再练这个考点的其他真题，帮助理解、记忆和举一反三。
+            </p>
+          </div>
+          <div className="feat-img">
+            <Phone src="/img/screens/15-wiki.png" alt="彩虹刷题考点页：考点讲解与练习这个考点的真题" />
+          </div>
+        </div>
+
+        <div className="feat rev">
+          <div className="feat-txt">
+            <span className="kicker orange">图解</span>
+            <h3>
+              真题解析和考点都有图解，<em>看起来更轻松</em>
+            </h3>
+            <p>
+              所有真题解析和考点讲解都配有图解，把题目的判断依据、容易混淆的概念和必要的计算步骤直观呈现，减轻阅读大段文字的负担，帮助记忆。
+            </p>
+          </div>
+          <div className="feat-img">
+            <figure className="kp-demo">
             <img
               src="/img/kp-demo/q2017-1-jiexi.jpg"
               alt="2017年真题「人体能量消耗测定方法」的解析图解：四种测定方法逐项画图对比与错误选项指认"
@@ -90,87 +159,6 @@ export default function Home() {
             />
             <figcaption>2017 年真题的解析图 · 小程序内实图</figcaption>
           </figure>
-        </div>
-
-        <div className="feat rev">
-          <div className="feat-txt">
-            <span className="kicker">今日学习</span>
-            <h3>
-              打开就知道<em>今天做什么</em>
-            </h3>
-            <p>
-              不用自己规划进度。每天一个学习队列，复习、薄弱点、新题自动配比；做完打卡，食材贴纸落袋——连着学，看得见。
-            </p>
-            <ul className="feat-points">
-              <li>快忘的题，自动回来——复习节奏，按你的遗忘速度排</li>
-              <li>教练一句话直说差距，不绕弯</li>
-              <li>有精力就加练，没精力明天见</li>
-            </ul>
-          </div>
-          <div className="feat-img">
-            <Phone src="/img/screens/03-home.png" alt="彩虹刷题首页：今日学习队列与连学周历" />
-          </div>
-        </div>
-
-        <div className="feat">
-          <div className="feat-txt">
-            <span className="kicker green">图解考点</span>
-            <h3>
-              每个考点，<em>配图讲透</em>
-            </h3>
-            <p>
-              {siteData.totalKps} 个考点全部图文详解：白板手绘风把分类、机制、数值画成图，内容多的考点按小节分几张图；先给你一句回忆提问，想一想再看答案——这是记忆科学里最省力的学法。
-            </p>
-            <ul className="feat-points">
-              <li>考点页直连挂载真题，看完就练</li>
-              <li>常考点单独标出，考前重点一目了然</li>
-            </ul>
-          </div>
-          <figure className="kp-demo">
-            <img
-              src="/img/kp-demo/nutrition-classification.jpg"
-              alt="考点「营养素的分类与功能」的白板图解：六大营养素分类与宏量微量划分"
-              loading="lazy"
-            />
-            <figcaption>考点「营养素的分类与功能」· 小程序内实图</figcaption>
-          </figure>
-        </div>
-
-        <div className="feat rev">
-          <div className="feat-txt">
-            <span className="kicker orange">备考计划</span>
-            <h3>
-              定好考试日，<em>计划自己排</em>
-            </h3>
-            <p>
-              填上考试日期和目标分，每日题量自动算出来；题量预告一直推演到考试日，改了目标立刻重排。时间紧，还能压缩范围，移出冷门考点集中拿大分。
-            </p>
-            <ul className="feat-points">
-              <li>间隔重复排期：该复习的那天自动出现</li>
-              <li>断几天不清零，回来接着走</li>
-            </ul>
-          </div>
-          <div className="feat-img">
-            <Phone src="/img/screens/12-plan.png" alt="彩虹刷题备考计划：每日题量自动计算与题量预告" />
-          </div>
-        </div>
-
-        <div className="feat">
-          <div className="feat-txt">
-            <span className="kicker amber">考纲大纲</span>
-            <h3>
-              考纲结构，<em>一屏看清</em>
-            </h3>
-            <p>
-              四大模块、章节、考点逐层下钻，每层都标着你练到哪了。哪块薄弱、哪块已经稳了，颜色直接告诉你。
-            </p>
-            <ul className="feat-points">
-              <li>模块占考纲比重标注，力气花在分值上</li>
-              <li>任意考点点进去就是图解详解</li>
-            </ul>
-          </div>
-          <div className="feat-img">
-            <Phone src="/img/screens/13-graph-l1.png" alt="彩虹刷题大纲页：四大模块与学习进度" />
           </div>
         </div>
       </section>
@@ -185,7 +173,7 @@ export default function Home() {
           <Link className="guide-link" href="/guide/tiku-pingce">
             <b>彩虹刷题-图解注册营养题库</b>
             <span>
-              2017-2026 年真题 {siteData.totalQuestions} 道 · {siteData.totalKps} 个图解考点 · 按年份整卷模考
+              2017-2026 年真题 {siteData.totalQuestions} 道 · {siteData.totalKps} 个图解考点 · 智能刷题、按大纲刷、真题模考
             </span>
           </Link>
           <Link className="guide-link" href="/gongying-tiku">

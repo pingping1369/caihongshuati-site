@@ -8,7 +8,7 @@ const pn = siteData.pn;
 export const metadata: Metadata = {
   alternates: { canonical: "/gongying-tiku" },
   title: "公共营养师三级刷题小程序：彩虹刷题-公共营养师三级",
-  description: `公共营养师三级真题刷题微信小程序「彩虹刷题-公共营养师三级」：收录 ${pn.range} 共 ${pn.sessions} 场考试真题 ${pn.totalQuestions} 道，理论知识、专业技能两科分开练，${pn.totalKps} 个考点知识页，按考试日期自动排每日计划。新用户送 30 天会员。`,
+  description: `公共营养师三级真题刷题微信小程序「彩虹刷题-公共营养师三级」：收录 ${pn.range} 共 ${pn.sessions} 场考试真题 ${pn.totalQuestions} 道，理论知识、专业技能两科分开练，${pn.totalKps} 个考点知识页、考点讲解配有图解；智能刷题、按大纲刷、整场模考三种刷法。新用户送 30 天会员。`,
 };
 
 const appJsonLd = {
@@ -73,7 +73,7 @@ export default function Page() {
           </li>
           <li>每题有答案和解析，多选题、案例题逐项说明；</li>
           <li>
-            <strong>{pn.totalKps} 个考点知识页</strong>，按《公共营养师 基础知识》《公共营养师（三级）》两本教材的章节组织，每道题都连着对应考点。
+            <strong>{pn.totalKps} 个考点知识页</strong>，按《公共营养师 基础知识》《公共营养师（三级）》两本教材的章节组织，每道题都连着对应考点；考点讲解配有图解，把概念区别、分类和数值画成图，刷题时可直接打开对应考点查阅。
           </li>
         </ul>
 
