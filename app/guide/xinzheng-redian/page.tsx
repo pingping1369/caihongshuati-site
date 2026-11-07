@@ -348,7 +348,7 @@ export default function Page() {
       <div className="card">
         <h1>2027 新政押题：18 个新政考点，每个出一道题</h1>
         <p className="meta">
-          更新于 {pageUpdates["/guide/xinzheng-redian"]} · 真题回执 + 现行标准逐条核对；预测题为原创自命题，非真题
+          更新于 {pageUpdates["/guide/xinzheng-redian"]} · 真题回执 + 现行标准逐条核对；预测题为原创自命题
         </p>
 
         <p>
@@ -425,7 +425,7 @@ export default function Page() {
         </p>
 
         <p className="src-note">
-          本页为备考整理：预测题为基于现行官方文件的原创自命题，非真题，不构成对命题的任何保证；
+          预测题为基于现行官方文件的原创自命题；
           标准与政策内容以官方发布文本为准，题目依据文件已逐题标注。真题回执可在小程序内查证原题。
         </p>
       </div>

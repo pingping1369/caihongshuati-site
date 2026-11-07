@@ -132,7 +132,7 @@ export default function Page() {
           在小程序「<Link href="/gongying-tiku">彩虹刷题-公共营养师三级</Link>」的大纲页，可以按真题数筛选考点，点进考点看讲解、做这个考点的真题，并看到它哪几场考过。
         </p>
 
-        <p className="src-note">回忆版真题来自考后公开整理的资料，不是官方发布的试卷。新一场真题收录后会更新统计。</p>
+        <p className="src-note">回忆版真题来自考后公开整理的资料。新一场真题收录后会更新统计。</p>
       </div>
     </main>
   );

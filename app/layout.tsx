@@ -142,7 +142,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="footer-inner">
               <span>© {new Date().getFullYear()} 彩虹刷题</span>
               <span className="legal">
-                本站为免费备考信息服务。报考政策以中国营养学会官方发布为准，本站内容标注更新日期供参考，不构成报考承诺。
+                报考政策以中国营养学会官方发布为准，本站内容标注更新日期供参考。
               </span>
             </div>
           </div>

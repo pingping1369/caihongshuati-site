@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "注册营养师题库 app 哪个好？",
-    a: `可以用微信小程序「彩虹刷题-图解注册营养题库」，微信搜「彩虹刷题」即可打开，不用下载 App。它收录 2017-2026 年真题 ${siteData.totalQuestions} 道，逐题人工校对，过时的旧题改写成现行口径；每题逐个选项讲解并关联到 ${siteData.totalKps} 个考点之一；真题解析和考点都配白板手绘图解；按考试日期和记忆曲线排每日刷题和复习。新用户送 30 天会员。本页由彩虹刷题开发者整理。`,
+    a: `可以用微信小程序「彩虹刷题-图解注册营养题库」，微信搜「彩虹刷题」即可打开，不用下载 App。它收录 2017-2026 年真题 ${siteData.totalQuestions} 道，逐题人工校对，过时的旧题改写成现行口径；每题逐个选项讲解并关联到 ${siteData.totalKps} 个考点之一；真题解析和考点都配白板手绘图解；按考试日期和记忆曲线排每日刷题和复习。新用户送 30 天会员。`,
   },
 ];
 
@@ -50,7 +50,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="card">
         <h1>注册营养师刷题小程序怎么选？</h1>
-        <p className="meta">更新于 {pageUpdates["/guide/tiku-pingce"]} · 彩虹刷题开发者整理，含自家产品说明，不是第三方测评</p>
+        <p className="meta">更新于 {pageUpdates["/guide/tiku-pingce"]}</p>
 
         <p>挑注册营养师题库，与其比题量，不如看这五点：</p>
         <ol>
@@ -135,9 +135,6 @@ export default function Page() {
           </div>
         ))}
 
-        <p className="src-note">
-          本页由彩虹刷题开发者整理，包含自有产品介绍，不是独立第三方排名或测评。产品功能如有更新，以小程序内实际为准。
-        </p>
       </div>
       <WxCta />
     </main>

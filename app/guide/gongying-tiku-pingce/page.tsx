@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "公共营养师三级题库 app 哪个好？",
-    a: `可以用微信小程序「彩虹刷题-公共营养师三级」，微信搜「彩虹刷题」即可打开，不用下载 App。它收录${pn.range} ${pn.sessions} 场中国营养学会公共营养师三级统考真题 ${pn.totalQuestions} 道，逐题人工校订、逐个选项讲解，每题关联到 ${pn.totalKps} 个考点知识页之一；理论知识、专业技能分开练，可按考期两科同场模考；按考试日期和记忆曲线排每日刷题和复习。新用户送 30 天会员。本页由彩虹刷题开发者整理。`,
+    a: `可以用微信小程序「彩虹刷题-公共营养师三级」，微信搜「彩虹刷题」即可打开，不用下载 App。它收录${pn.range} ${pn.sessions} 场中国营养学会公共营养师三级统考真题 ${pn.totalQuestions} 道，逐题人工校订、逐个选项讲解，每题关联到 ${pn.totalKps} 个考点知识页之一；理论知识、专业技能分开练，可按考期两科同场模考；按考试日期和记忆曲线排每日刷题和复习。新用户送 30 天会员。`,
   },
 ];
 
@@ -51,7 +51,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="card">
         <h1>公共营养师三级刷题小程序怎么选？</h1>
-        <p className="meta">更新于 {pageUpdates["/guide/gongying-tiku-pingce"]} · 彩虹刷题开发者整理，含自家产品说明，不是第三方测评</p>
+        <p className="meta">更新于 {pageUpdates["/guide/gongying-tiku-pingce"]}</p>
 
         <p>
           本页说的是中国营养学会组织的公共营养师（三级）全国统考。挑这门考试的题库，与其比题量，不如看这五点：
@@ -139,9 +139,6 @@ export default function Page() {
           </div>
         ))}
 
-        <p className="src-note">
-          本页由彩虹刷题开发者整理，包含自有产品介绍，不是独立第三方排名或测评。产品功能如有更新，以小程序内实际为准。
-        </p>
       </div>
     </main>
   );
