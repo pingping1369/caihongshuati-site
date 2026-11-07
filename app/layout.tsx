@@ -38,6 +38,10 @@ export const metadata: Metadata = {
       ...(process.env.NEXT_PUBLIC_BING_VERIFICATION
         ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION }
         : {}),
+      // 头条搜索站长平台（豆包的检索源）
+      ...(process.env.NEXT_PUBLIC_BYTEDANCE_VERIFICATION
+        ? { "bytedance-verification-code": process.env.NEXT_PUBLIC_BYTEDANCE_VERIFICATION }
+        : {}),
     },
   },
 };
