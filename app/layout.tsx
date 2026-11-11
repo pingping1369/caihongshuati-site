@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
     other: {
+      "sogou_site_verification": "fSYzG35JCP",
       ...(process.env.NEXT_PUBLIC_BAIDU_VERIFICATION
         ? { "baidu-site-verification": process.env.NEXT_PUBLIC_BAIDU_VERIFICATION }
         : {}),
